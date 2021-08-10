@@ -1,0 +1,50 @@
+*, *::after, *::before {
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+a {
+    font-family: inherit;
+    background-color: transparent;
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    border-style: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 0;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    margin: 0;
+}
+.no-scroll {
+    overflow: hidden;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*progect*/
