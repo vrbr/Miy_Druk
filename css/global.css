@@ -48,3 +48,23 @@ button, input, optgroup, select, textarea {
 }
 
 /*progect*/
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 320px;
+    font-family: "Commissioner", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    background-color: #252323;
+    background: linear-gradient(269.77deg, rgba(72, 68, 68, 0.6) 0.04%, rgba(37, 35, 35, 0.6) 99.64%), #252323;
+}
+.body__wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+}
