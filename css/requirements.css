@@ -1,0 +1,196 @@
+.requirements {
+    color: #fff;
+}
+.requirements__title {
+    padding-bottom: 38px;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 89%;
+    text-align: center;
+}
+.requirements__list {
+    margin: 0 auto;
+    width: 280px;
+}
+.requirements__list input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+}
+.requirements__list input[type=checkbox]:checked ~ .req-item__list{
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0 , 50%);
+    overflow: hidden;
+}
+.requirements__list input[type=checkbox]:checked ~ i::before {
+    transform: translate(5px, 0) rotate(45deg);
+}
+.requirements__list input[type=checkbox]:checked ~ i::after {
+    transform: translate(-5px, 0) rotate(-45deg);
+}
+.requirements__list + .requirements__list {
+    padding-top: 26px;
+}
+.req-item {
+    position: relative;
+}
+.req-item__icon {
+    position: absolute;
+    transform: translate( -6px , 0 );
+    margin-top: 16px;
+    left: 25px;
+    top: -7px;
+    z-index: 2;
+}
+.req-item__icon-2 {
+    top: 9px;
+}
+.req-item__icon:before , .req-item__icon:after {
+    content: "";
+    transition: all 0.25s ease-in-out;
+    position: absolute;
+    background-color: #252323;
+    width: 3px;
+    height: 16px;
+}
+.req-item__icon:before {
+    transform: translate(5px, 0) rotate(-45deg);
+}
+.req-item__icon:after {
+    transform: translate(-5px, 0) rotate(45deg);
+}
+.req-item__title-desk {
+    display: none;
+}
+.req-item__title {
+    position: relative;
+    padding-bottom: 16px;
+    padding-left: 53px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+    user-select: none;
+    cursor: pointer;
+}
+.req-item__title::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    left: 0;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.59);
+}
+.req-item__title-1::before {
+    top: -4px;
+}
+.req-item__title-2::before {
+    top: 12px;
+}
+.req-item__list {
+    transition: all 0.25s ease-in-out;
+}
+.req-item__item {
+    position: relative;
+    padding-bottom: 12px;
+    max-height: 800px;
+    font-size: 15px;
+    line-height: 19px;
+    color: #939597;
+    overflow: hidden;
+    opacity: 1;
+    transform: translate( 0 , 0 );
+    z-index: 2;
+}
+.req-item__item:first-of-type {
+    padding-top: 10px;
+}
+.req-item__item:last-of-type {
+    padding-bottom: 20px;
+}
+@keyframes flipdown {
+    0% {
+      opacity: 0;
+      transform-origin: top center;
+      transform: rotateX(-90deg);
+    }
+    5% {
+      opacity: 1;
+    }
+    80% {
+      transform: rotateX(8deg);
+    }
+    83% {
+      transform: rotateX(6deg);
+    }
+    92% {
+      transform: rotateX(-3deg);
+    }
+    100% {
+      transform-origin: top center;
+      transform: rotateX(0deg);
+    }
+}
+@media (min-width: 768px) {
+    .requirements {
+        position: relative;
+        padding-top: 30px;
+    }
+    .requirements::after {
+        position: absolute;
+        content: "";
+        background: url("../img/req-tab.svg");
+        width: 300px;
+        height: 194px;
+        bottom: -43px;
+        right: 39px;
+    }
+    .requirements__wrapper {
+        display: flex;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .requirements__title {
+        padding-left: 60px;
+        font-size: 38px;
+        text-align: left;
+    }
+    .requirements__list {
+        margin: 0;
+        width: 320px;
+    }
+    .requirements__list + .requirements__list {
+        padding-top: 0;
+    }
+    .requirements__list input[type=checkbox],
+    .req-item__icon, .req-item__title::before {
+        display: none;
+    }
+    .req-item__title {
+        display: none;
+    }
+    .req-item__title-desk {
+        display: block;
+        padding-bottom: 12px;
+    }
+    .req-item__item {
+        padding-bottom: 0;
+    }
+}
+@media (min-width: 1024px) {
+    .requirements::after {
+        background: url("../img/req-bigtab.svg");
+        width: 400px;
+        height: 259px;
+    }
+    .requirements__list + .requirements__list {
+        margin-left: 50px;
+    }
+}

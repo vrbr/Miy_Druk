@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Полиграфия "Мiй друк"</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NM3MJJ7WQ"></script>
     <script>
@@ -155,19 +155,19 @@
                 </a>
                 <ul class="header-desk__list">
                     <li class="header-desk__item">
-                        <a href="" class="header-desk__link" href="#anchor-service">Услуги</a>
+                        <a class="header-desk__link" href="#anchor-service">Услуги</a>
                     </li>
                     <li class="header-desk__item">
-                        <a href="" class="header-desk__link"href="#anchor-order">Как сделать заказ</a>
+                        <a class="header-desk__link" href="#anchor-order">Как сделать заказ</a>
                     </li>
                     <li class="header-desk__item">
-                        <a href="" class="header-desk__link"href="#anchor-delivery">Доставка</a>
+                        <a class="header-desk__link" href="#anchor-delivery">Доставка</a>
                     </li>
                     <li class="header-desk__item">
-                        <a href="" class="header-desk__link"href="#anchor-requirements">Требования к макетам</a>
+                        <a class="header-desk__link" href="#anchor-requirements">Требования к макетам</a>
                     </li>
                     <li class="header-desk__item">
-                        <a href="" class="header-desk__link" href="#anchor-contacts">Контакты</a>
+                        <a class="header-desk__link" href="#anchor-contacts">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -292,6 +292,45 @@
                     </div>
                 </div>
             </section>
+            <section class="requirements">
+                <h2 class="requirements__title">Требования к макетам</h2>
+                <div class="requirements__wrapper">
+                    <ul class="requirements__list">
+                        <li class="requirements__item req-item">
+                            <input class="req-item__input-1" id="checkbox1" type="checkbox" checked>
+                            <i class="req-item__icon req-item__icon-1"></i>
+                            <h3 class="req-item__title req-item__title-1">Цифровая печать</h3>
+                            <h3 class="req-item__title-desk">Для цифровой печати</h3>
+                            <ul class="req-item__list">
+                                <li class="req-item__item">Формат файлов: векторные (CDR,PDF), растровые (TIFF, JPEG)</li>
+                                <li class="req-item__item">Цветовая модель: CMYK</li>
+                                <li class="req-item__item">Размер файла - не более 50 Мб</li>
+                                <li class="req-item__item">Размер файла должен соответствовать печатному оттиску (1:1) </li>
+                                <li class="req-item__item">Для JPEG-файлов не использовать сжатие</li>
+                                <li class="req-item__item">Для TIFF-файлов - свести все слои в один и при сохранении выбирать ZIP или LZW сжатие</li>
+                                <li class="req-item__item">Для PDF-файлов - все шрифты должны быть внедрены в PDF</li>
+                                <li class="req-item__item">Разрешение: 300 dpi</li>
+                                <li class="req-item__item">Макет не должен содержать меток обреза, штампов, биговок и любых других не печатаемых объектов</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="requirements__list">
+                        <li class="requirements__item req-item">
+                            <input class="req-item__input-2" id="checkbox2" type="checkbox" checked>
+                            <i class="req-item__icon req-item__icon-2"></i>
+                            <h3 class="req-item__title req-item__title-2">Широкоформатная печать</h3>
+                            <h3 class="req-item__title-desk">Для широкоформатной печати</h3>
+                            <ul class="req-item__list">
+                                <li class="req-item__item">Формат файлов: TIFF, EPS</li>
+                                <li class="req-item__item">Растровая графика в натуральном размере (1:1)</li>
+                                <li class="req-item__item">Разрешение: 100 dpi</li>
+                                <li class="req-item__item">Цветовая модель: CMYK</li>
+                                <li class="req-item__item">Черный цвет должен быть композитным: C-60%  M-60% Y-60% K-100%</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
@@ -299,6 +338,12 @@
         </footer>
     </div>
 
+    <script>
+        if (document.documentElement.clientWidth > 767) {
+        document.getElementById("checkbox1").checked = false;
+        document.getElementById("checkbox2").checked = false;
+    };
+    </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/fixed.js"></script>
     <script src="js/swiper.js"></script>
