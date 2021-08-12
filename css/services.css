@@ -1,10 +1,11 @@
 .services__wrapper {
     padding-top: 45px;
-    background: url("../img/mask-bg.svg") no-repeat;
+    background: url("../img/mask-bg.svg"), url("../img/mask-bg.svg");
     width: 100%;
     height: 568px;
     background-size: cover;
     background-position: 0px 0px;
+    background-repeat-y: no-repeat;
 }
 .services__title {
     padding-bottom: 18px;
@@ -125,6 +126,11 @@
     }
     .swiper-slide.last-slide {
         margin-right: 190px !important;
+    }
+}
+@media (min-width: 900px) {
+    .services__wrapper {
+        background-size: contain;
     }
 }
 @media (min-width: 1200px) {
