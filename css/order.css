@@ -1,3 +1,6 @@
+.order {
+    padding-bottom: 34px;
+}
 .order__title {
     margin: 0 auto;
     padding-bottom: 56px;
@@ -100,21 +103,30 @@
         margin-left: 60px;
     }
 }
+@media (min-width: 1024px) {
+    .order {
+        position: relative;
+    }
+    .order::after {
+        position: absolute;
+        content: "";
+        background: url("../img/order-tab.svg");
+        width: 246px;
+        height: 326px;
+        right: 49px;
+        bottom: 43px;
+    }
+}
 @media (min-width: 1200px) {
     .order {
         padding-bottom: 300px;
     }
-    .order__wrapper {
-        position: relative;
-    }
-    .order__wrapper::after {
-        position: absolute;
-        content: "";
+    .order::after {
         background: url("../img/order.svg");
         width: 320px;
         height: 426px;
         right: 40px;
-        bottom: -337px;
+        bottom: 131px;
     }
     .order__title {
         padding-left: 160px;
@@ -154,9 +166,12 @@
         width: 311px;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .order {
         padding-top: 50px;
+    }
+    .order::after {
+        right: 94px;
     }
     .order__title {
         padding-bottom: 204px;
@@ -175,21 +190,6 @@
     }
     .order__button {
         margin-top: 14px;
-    }
-    /* .order__wrapper::after {
-        right: 94px;
-        bottom: -295px;
-    } */
-    .order__button {
-        width: 311px;
-    }
-}
-@media (min-width: 1440px) {
-    .order__wrapper::after {
-        right: 94px;
-        bottom: -295px;
-    }
-    .order__button {
         width: 403px;
     }
 }
