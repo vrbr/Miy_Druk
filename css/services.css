@@ -104,10 +104,6 @@
     letter-spacing: -0.005em;
     color: #706B6B;
 }
-.services_buttons {
-    display: flex;
-    flex-direction: column;
-}
 .services__button {
     width: 100%;
 }
