@@ -12,9 +12,6 @@ new Swiper(".mySwiper", {
         hashNavigation: {
         watchState: true,
     },
-    hashNavigation: {
-        watchState: true,
-    },
     keyboard: {
         enabled: true,
         onlyInViewport: true,
