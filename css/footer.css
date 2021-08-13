@@ -1,0 +1,45 @@
+.footer__social {
+    padding-left: 20px;
+    padding-bottom: 17px;
+}
+.footer__social-list {
+    display: flex;
+}
+.footer__social-item {
+    padding-right: 16px;
+}
+@media (min-width: 768px) {
+    .footer__social {
+        padding-left: 60px;
+        padding-bottom: 23px;
+    }
+    .footer__social-item {
+        padding-right: 25px;
+    }
+}
+@media (min-width: 1200px) {
+    .footer__social {
+        padding-left: 160px;
+        padding-bottom: 56px;
+    }
+    .footer-insta svg {
+        width: 45px;
+        height: 45px;
+    }
+    .footer-telega svg {
+        width: 47px;
+        height: 47px;
+    }
+    .footer-viber svg {
+        width: 48px;
+        height: 48px;
+    }
+    .footer__social-item {
+        padding-right: 38px;
+    }
+}
+@media (min-width: 1440px) {
+    .footer__social {
+        padding-left: 220px;
+    }
+}
