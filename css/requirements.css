@@ -1,6 +1,9 @@
 .requirements {
     color: #fff;
 }
+.requirements__wrapper {
+    padding-bottom: 20px;
+}
 .requirements__title {
     padding-bottom: 38px;
     font-weight: 800;
@@ -149,7 +152,7 @@
         background: url("../img/req-tab.svg");
         width: 300px;
         height: 194px;
-        bottom: -43px;
+        bottom: 0;
         right: 39px;
     }
     .requirements__wrapper {
@@ -178,7 +181,9 @@
     }
     .req-item__title-desk {
         display: block;
-        padding-bottom: 12px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 35px;
     }
     .req-item__item {
         padding-bottom: 0;
@@ -199,8 +204,11 @@
         background: url("../img/req-desk.svg");
         width: 610px;
         height: 395px;
-        bottom: -240px;
+        bottom: 16px;
         right: 38px;
+    }
+    .requirements__wrapper {
+        padding-bottom: 200px;
     }
     .requirements__title {
         padding-left: 160px;
@@ -231,6 +239,6 @@
         width: 496px;
     }
     .requirements::after {
-        bottom: -232px;
+        bottom: 0;
     }
 }

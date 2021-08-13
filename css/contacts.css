@@ -1,0 +1,216 @@
+.contacts {
+    background: url("../img/mask-bg.svg"), url("../img/mask-bg.svg");
+    width: 100%;
+    height: 500px;
+    padding-top: 47px;
+    background-size: cover;
+    background-position: 0px 0px;
+    background-repeat-y: no-repeat;
+}
+.contacts__title {
+    padding-bottom: 40px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 43px;
+    color: #252323;
+}
+.contacts__social {
+    display: none;
+}
+.contacts__wrapper {
+    width: 280px;
+    margin: 0 auto;
+}
+.contacts-block {
+    display: grid;
+    grid-template-columns: 99px 1fr;
+    grid-gap: 14px;
+}
+.contacts-block + .contacts-block {
+    padding-top: 57px;
+}
+.contacts-block__map {
+    padding-top: 5px;
+    text-align: center;
+}
+.contacts-block__map span {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 19px;
+    color: #000000;
+}
+.contacts-block__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contacts-block__address-contacts a {
+    font-size: 15px;
+    line-height: 19px;
+}
+.contacts-block__address-address {
+    font-size: 15px;
+    line-height: 19px;
+}
+.contacts-block__address-address .carry {
+    display: block;
+}
+@media (min-width: 768px) {
+    .contacts {
+        position: relative;
+        height: 552px;
+    }
+    .contacts__wrapper {
+        display: flex;
+        margin-left: 60px;
+        gap: 100px;
+        width: 648px;
+    }
+    .contacts__title {
+        padding-left: 60px;
+        font-size: 38px;
+        text-align: left;
+    }
+    .contacts__social {
+        display: block;
+    }
+    .contacts__social-list {
+        position: absolute;
+        display: flex;
+        top: 59px;
+        right: 60px;
+    }
+    .contacts__social-item {
+        padding-left: 20px;
+    }
+    .contacts-insta svg {
+        width: 35px;
+        height: 35px;
+    }
+    .contacts-telega svg {
+        width: 37px;
+        height: 37px;
+    }
+    .contacts-viber svg {
+        width: 39px;
+        height: 39px;
+    }
+    .contacts-block + .contacts-block {
+        padding-top: 0;
+    }
+    .contacts-block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contacts-block__map {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacts-block__map img {
+        width: 200px;
+        height: 200px;
+        order: 2;
+    }
+    .contacts-block__map span {
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: 600;
+    }
+    .contacts-block__address-contacts {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+    .contacts-block__address-contacts a {
+        display: block;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .contacts-block__address-address .carry {
+        display: inline;
+    }
+}
+@media (min-width: 900px) {
+    .contacts {
+        background-size: contain;
+    }
+}
+@media (min-width: 1024px) {
+    .contacts__wrapper {
+        gap: 150px;
+    }
+}
+@media (min-width: 1200px) {
+    .contacts {
+        height: 800px;
+    }
+    .contacts__title {
+        padding-left: 160px;
+        font-size: 55px;
+        line-height: 91px;
+    }
+    .contacts-insta svg {
+        width: 45px;
+        height: 45px;
+    }
+    .contacts__social-list {
+        top: 82px;
+        right: 75px;
+    }
+    .contacts-telega svg {
+        width: 47px;
+        height: 47px;
+    }
+    .contacts-viber svg {
+        width: 49px;
+        height: 49px;
+    }
+    .contacts__wrapper {
+        margin-left: 160px;
+        width: auto;
+    }
+    .contacts-block__map img {
+        width: 319px;
+        height: 319px;
+    }
+    .contacts-block__map span {
+        padding-bottom: 10px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .contacts-block__address-address {
+        padding-bottom: 8px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .contacts-block__address-contacts a {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+@media (min-width: 1440px) {
+    .contacts {
+        padding-top: 80px;
+    }
+    .contacts__title {
+        font-size: 72px;
+        line-height: 88px;
+    }
+    .contacts__wrapper {
+        gap: 193px;
+    }
+    .contacts__social-list {
+        right: 275px;
+        top: 115px;
+    }
+    .contacts-block__address-address {
+        padding-bottom: 12px;
+    }
+    .contacts-block__address-contacts a {
+        padding-bottom: 8px;
+    }
+}
