@@ -51,11 +51,12 @@
     .delivery::after {
         position: absolute;
         content: "";
-        background: url("../img/delivery-tab.svg");
+        background: url("../img/delivery.svg");
         width: 132px;
         height: 391px;
         top: 112px;
         right: 58px;
+        background-size: cover;
     }
     .delivery__title {
         padding-left: 60px;
@@ -89,7 +90,6 @@
         height: 800px;
     }
     .delivery::after {
-        background: url("../img/delivery-desk.svg");
         width: 212px;
         height: 632px;
         top: 74px;
