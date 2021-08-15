@@ -456,6 +456,48 @@
             </div>
         </div>
     </div>
+    <div class="popup popup-form">
+        <div class="popup-form__wrapper">
+            <div class="popup-form__inner">
+                <div class="popup-form__content popup-form__content-fluid popup-form__content-centered">
+                    <form class="form" method="POST" name="form-maket" id="form" action="telegramform/send-message-to-telegram-maket.php" autocomplete="off">
+                        <h2>Расчет стоимости</h2>
+                        <div class="input-div one">
+                            <div class="i">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h5>Имя</h5>
+                                <input class="input-calculate" type="text" name="name-calculate" tabindex="0" required>
+                            </div>
+                        </div>
+                        <div class="input-div two">
+                            <div class="i">
+                                <i class="fas fa-mobile"></i>
+                            </div>
+                            <div>
+                                <h5>Телефон</h5>
+                                <input class="input-calculate" type="tel" name="phone-calculate" tabindex="0" required>
+                            </div>
+                        </div>
+                        <fieldset class="form__details">
+                            <textarea class="form__details-input" name="details" cols="41" rows="6" id="details" placeholder="Пример: 500 визиток, цветные, односторонние. Есть свой макет. Потребуется доставка в город Львов."></textarea>
+                        </fieldset>
+                        <div class="form__button-wrapper">
+                            <div class="button-price">
+                                <input class="button-price" type="submit" name="actMaket" value="Рассчитать стоимость">
+                                <input name="themeMaket" type="hidden" class="contact-form__input contact-form__calculate" value="Оформлен заказ">
+                            </div>
+
+                            <div class="button-send">
+                                <a class="send">Вернуться на главную</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         if (document.documentElement.clientWidth > 767) {
@@ -463,9 +505,7 @@
         document.getElementById("checkbox2").checked = false;
     };
     </script>
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script src="js/fixed.js"></script>
-    <!-- <script src="js/swiper.js"></script> -->
-    <script src="js/popup-connection.js"></script>
+    <script src="js/popups.js"></script>
 </body>
 </html>
