@@ -1,54 +1,56 @@
-const body = document.querySelector('body');
-const connection = document.querySelector('.popup-connection');
-const inputs = connection.querySelectorAll('.input-connection');
-const buttonFeatures = document.querySelector('.button__popup-connection');
-const buttonConnection = connection.querySelector('.popup-connection__button-close');
-const form = document.querySelector('.popup-form');
-const buttonCalculate = document.querySelector('.button__popup-calculate');
-const buttonClose = document.querySelector('.button-send');
-const inputsForm = form.querySelectorAll('.input-calculate');
+// const body = document.querySelector('body');
+// const connection = document.querySelector('.popup-connection');
+// const inputs = connection.querySelectorAll('.input-connection');
+// const buttonFeatures = document.querySelector('.button__popup-connection');
+// const buttonConnection = connection.querySelector('.popup-connection__button-close');
+// const form = document.querySelector('.popup-form');
+// const buttonCalculate = document.querySelector('.button__popup-calculate');
+// const buttonClose = document.querySelector('.button-send');
+// const inputsForm = form.querySelectorAll('.input-calculate');
 
-function focusFunc() {
-    let parent = this.parentNode.parentNode;
-    parent.classList.add('focus');
-}
+// function focusFunc() {
+//     let parent = this.parentNode.parentNode;
+//     parent.classList.add('focus');
+// }
 
-function blurFunc() {
-    let parent = this.parentNode.parentNode;
-    if (this.value == '') {
-        parent.classList.remove('focus');
-    }
-}
+// function blurFunc() {
+//     let parent = this.parentNode.parentNode;
+//     if (this.value == '') {
+//         parent.classList.remove('focus');
+//     }
+// }
 
-inputs.forEach(input => {
-    input.addEventListener('focus', focusFunc);
-    input.addEventListener('blur', blurFunc);
-});
+// inputs.forEach(input => {
+//     input.addEventListener('focus', focusFunc);
+//     input.addEventListener('blur', blurFunc);
+// });
 
-inputsForm.forEach(inputForm => {
-    inputForm.addEventListener('focus', focusFunc);
-    inputForm.addEventListener('blur', blurFunc);
-});
+// inputsForm.forEach(inputForm => {
+//     inputForm.addEventListener('focus', focusFunc);
+//     inputForm.addEventListener('blur', blurFunc);
+// });
 
-buttonFeatures.addEventListener('click', () => {
-    body.classList.add('no-scroll');
-    connection.classList.add('is-active');
-});
+// buttonFeatures.addEventListener('click', () => {
+//     body.classList.add('no-scroll');
+//     connection.classList.add('is-active');
+// });
 
-buttonConnection.addEventListener('click', () => {
-    body.classList.remove('no-scroll');
-    connection.classList.remove('is-active');
-});
+// buttonConnection.addEventListener('click', () => {
+//     body.classList.remove('no-scroll');
+//     connection.classList.remove('is-active');
+// });
 
-buttonCalculate.addEventListener('click', () => {
-    body.classList.add('no-scroll');
-    form.classList.add('is-active');
-});
+// buttonCalculate.addEventListener('click', () => {
+//     body.classList.add('no-scroll');
+//     form.classList.add('is-active');
+// });
 
-buttonClose.addEventListener('click', () => {
-    body.classList.remove('no-scroll');
-    form.classList.remove('is-active');
-});
+// buttonClose.addEventListener('click', () => {
+//     body.classList.remove('no-scroll');
+//     form.classList.remove('is-active');
+// });
+
+///////////////////////
 
 // const body = document.querySelector('body');
 // const connection = document.querySelector('.popup-connection');
@@ -83,3 +85,23 @@ buttonClose.addEventListener('click', () => {
 //     body.classList.remove('no-scroll');
 //     connection.classList.remove('is-active');
 //   }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modalButtons = document.querySelectorAll('.button__popup-connection');
+    const closeButtons = document.querySelectorAll('.button-close');
+
+    modalButtons.forEach(function(item){
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            const modalId = this.getAttribute('data-modal');
+            const modalElem = document.querySelector('.popup[data-modal="' + modalId + '"]');
+            modalElem.classList.add('is-active');
+        });
+    closeButtons.forEach(function(item){
+        item.addEventListener('click', function(e) {
+           var parentModal = this.closest('.popup');
+           parentModal.classList.remove('is-active');
+        });
+     });
+    });
+});
