@@ -149,11 +149,12 @@
     .requirements::after {
         position: absolute;
         content: "";
-        background: url("../img/req-tab.svg");
+        background: url("../img/req.svg");
         width: 300px;
         height: 194px;
         bottom: 0;
         right: 39px;
+        background-size: cover;
     }
     .requirements__wrapper {
         display: flex;
@@ -191,7 +192,6 @@
 }
 @media (min-width: 1024px) {
     .requirements::after {
-        background: url("../img/req-bigtab.svg");
         width: 400px;
         height: 259px;
     }
@@ -201,7 +201,6 @@
 }
 @media (min-width: 1200px) {
     .requirements::after {
-        background: url("../img/req-desk.svg");
         width: 610px;
         height: 395px;
         bottom: 16px;

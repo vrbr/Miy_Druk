@@ -110,11 +110,12 @@
     .order::after {
         position: absolute;
         content: "";
-        background: url("../img/order-tab.svg");
+        background: url("../img/order.svg");
         width: 246px;
         height: 326px;
         right: 49px;
         bottom: 43px;
+        background-size: cover;
     }
 }
 @media (min-width: 1200px) {
@@ -122,7 +123,6 @@
         padding-bottom: 300px;
     }
     .order::after {
-        background: url("../img/order.svg");
         width: 320px;
         height: 426px;
         right: 40px;

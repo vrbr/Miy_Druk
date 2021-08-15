@@ -15,12 +15,22 @@
     line-height: 43px;
     color: #252323;
 }
+.title-more {
+    visibility: hidden;
+    padding-bottom: 0;
+}
 .swiper-container.mySwiper {
     width: 100%;
     height: 400px;
 }
 .swiper-wrapper {
     padding-left: 20px;
+}
+.swiper-wrapper.more-wrapper {
+    padding-left: 0;
+}
+.more-wrapper .swiper-slide {
+    margin: 0 auto;
 }
 .swiper-slide {
     display: flex;
@@ -48,39 +58,95 @@
     content: "";
 }
 .title--1::after {
-    background: url("../img/services-1-mob.svg") no-repeat;
+    background: url("../img/services-1.svg") no-repeat;
     width: 112px;
     height: 149px;
     top: 50px;
     right: -60px;
+    background-size: cover;
+}
+.title--1-more::after {
+    background: url("../img/services-1.svg") no-repeat;
+    width: 94px;
+    height: 125px;
+    top: -23px;
+    right: -76px;
+    background-size: cover;
+}
+.title--2-more__desk,
+.title--4-more__desk {
+    display: none;
 }
 .title--2::after {
-    background: url("../img/services-2-mob.svg") no-repeat;
+    background: url("../img/services-2.svg") no-repeat;
     width: 125px;
     height: 124px;
     top: 71px;
     right: -60px;
+    background-size: cover;
+}
+.title--2-more::after {
+    top: -30px;
+    right: -76px;
 }
 .title--3::after {
-    background: url("../img/services-3-mob.svg") no-repeat;
+    background: url("../img/services-3.svg") no-repeat;
     width: 100px;
     height: 145px;
     top: 48px;
     right: -65px;
+    background-size: cover;
+}
+.title--3-more::after {
+    top: -24px;
+    right: -69px;
 }
 .title--4::after {
-    background: url("../img/services-4-mob.svg") no-repeat;
+    background: url("../img/services-4.svg") no-repeat;
     width: 98px;
     height: 131px;
     top: 48px;
     right: -65px;
+    background-size: cover;
+}
+.title--4-more::after {
+    width: 90px;
+    height: 120px;
+    top: -28px;
+    right: -71px;
 }
 .title--5::after {
-    background: url("../img/services-5-mob.svg") no-repeat;
+    background: url("../img/services-5.svg") no-repeat;
     width: 153px;
     height: 99px;
     top: -26px;
     right: -72px;
+    background-size: cover;
+}
+.services__deskr {
+    font-size: 15px;
+    line-height: 19px;
+    color: #706B6B;
+    flex: 1 1 auto;
+}
+.digital-descr {
+    padding-top: 6px;
+}
+.widescreen-deskr {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    width: 104%;
+}
+.souvenir-deskr {
+    padding-top: 36px;
+    padding-bottom: 20px;
+}
+.additional-deskr {
+    padding-top: 17px;
+    padding-bottom: 19px;
+}
+.design-deskr {
+    padding-bottom: 20px;
 }
 .swiper-slide__title.title-1 {
     padding-bottom: 60px;
@@ -105,6 +171,15 @@
     letter-spacing: -0.005em;
     color: #706B6B;
 }
+.services__more {
+    margin-bottom: 12px;
+    padding-left: 8px;
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #706B6B;
+    text-decoration-line: underline;
+}
 .services__button {
     width: 100%;
 }
@@ -127,10 +202,149 @@
     .swiper-slide.last-slide {
         margin-right: 190px !important;
     }
+    .more-wrapper .swiper-slide {
+        display: grid;
+        grid-template-columns: 227px 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        margin-left: 0;
+        padding: 34px 74px 13px 60px;
+        width: 600px;
+        height: 360px;
+        border-left: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .title-more {
+        padding-bottom: 25px;
+    }
+    .swiper-slide__title.title-2.title--1-more,
+    .swiper-slide__title.title-3.title--2-more,
+    .title--2-more__desk,
+    .swiper-slide__title.title-2.title--3-more,
+    .title--4-more__desk,
+    .swiper-slide__title.title-1.title--5-more {
+        grid-column: 1/-1;
+        padding-bottom: 20px;
+        font-size: 38px;
+        line-height: 44px;
+        font-weight: 800;
+    }
+    .swiper-slide__title.title-2.title--1-more {
+        width: 60%;
+    }
+    .title--1-more::after {
+        width: 138px;
+        height: 185px;
+        top: -11px;
+        right: -218px;
+    }
+    .title--2-more__desk,
+    .title--4-more__desk {
+        display: block;
+        position: relative;
+    }
+    .title--2-more__desk {
+        width: 80%;
+    }
+    .title--2-more__desk::after {
+        position: absolute;
+        content: "";
+        background: url("../img/services-2.svg") no-repeat;
+        width: 191px;
+        height: 188px;
+        top: 38px;
+        right: -140px;
+        background-size: cover;
+    }
+    .title--3-more::after {
+        width: 139px;
+        height: 203px;
+        top: -21px;
+        right: -186px;
+    }
+    .title--4-more__desk {
+        width: 80%;
+    }
+    .title--4-more__desk::after {
+        position: absolute;
+        background: url("../img/services-4.svg") no-repeat;
+        content: "";
+        width: 148px;
+        height: 199px;
+        top: -22px;
+        right: -158px;
+        background-size: cover;
+    }
+    .title--5-more::after {
+        width: 212px;
+        height: 137px;
+        top: -27px;
+        right: -185px;
+    }
+    .swiper-slide__title.title-3.title--2-more,
+    .swiper-slide__title.title-3.title--4-more {
+        display: none;
+    }
+    .services__deskr {
+        grid-column: 1/-1;
+        width: 83%;
+    }
+    .digital-descr {
+        width: 80%;
+        padding-bottom: 25px;
+    }
+    .souvenir-deskr {
+        padding-top: 24px;
+    }
+    .additional-deskr {
+        padding-top: 9px;
+    }
+    .widescreen-deskr {
+        width: 73%;
+    }
+    .more-wrapper .services__button {
+        width: 225px;
+        height: 50px;
+        margin-left: 0;
+    }
 }
 @media (min-width: 900px) {
     .services__wrapper {
         background-size: contain;
+    }
+}
+@media (min-width: 1024px) {
+    .more-wrapper .swiper-slide {
+        grid-template-rows: 1fr 2fr 1fr;
+        width: 700px;
+        height: 370px;
+    }
+    .title--1-more::after {
+        top: 4px;
+        right: -262px;
+    }
+    .digital-descr {
+        padding-top: 21px;
+    }
+    .services__deskr {
+        width: 69%;
+        padding-top: 25px;
+    }
+    .title--2-more__desk::after {
+        top: 60px;
+    }
+    .title--3-more::after {
+        top: 6px;
+        right: -184px;
+    }
+    .title--4-more__desk::after {
+        top: 23px;
+        right: -141px;
+    }
+    .title--5-more::after {
+        top: 37px;
+        right: -201px;
     }
 }
 @media (min-width: 1200px) {
@@ -160,6 +374,11 @@
         font-size: 38px;
         line-height: 45px;
     }
+    .services__more {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.06em;
+    }
     .swiper-slide__title.title-1 {
         padding-bottom: 86px;
     }
@@ -167,35 +386,30 @@
         padding-bottom: 64px;
     }
     .title--1::after {
-        background: url("../img/services-1-bigtab.svg") no-repeat;
         width: 130px;
         height: 174px;
         top: 106px;
         right: -82px;
     }
     .title--2::after {
-        background: url("../img/services-2-bigtab.svg") no-repeat;
         width: 170px;
         height: 167px;
         top: 120px;
         right: -79px;
     }
     .title--3::after {
-        background: url("../img/services-3-bigtab.svg") no-repeat;
         width: 122px;
         height: 174px;
         top: 103px;
         right: -84px;
     }
     .title--4::after {
-        background: url("../img/services-4-bigtab.svg") no-repeat;
         width: 122px;
         height: 161px;
         top: 111px;
         right: -84px;
     }
     .title--5::after {
-        background: url("../img/services-5-bigtab.svg") no-repeat;
         width: 162px;
         height: 104px;
         top: 21px;
@@ -205,6 +419,62 @@
         font-size: 18px;
         line-height: 22px;
         letter-spacing: 0.06em;
+    }
+    .swiper-slide__title.title-2.title--1-more, .swiper-slide__title.title-3.title--2-more, .title--2-more__desk, .swiper-slide__title.title-2.title--3-more, .title--4-more__desk, .swiper-slide__title.title-1.title--5-more {
+        font-size: 55px;
+        line-height: 71px;
+    }
+    .more-wrapper .swiper-slide {
+        grid-template-columns: 311px 1fr;
+        padding: 34px 74px 13px 160px;
+        width: 905px;
+        height: 470px;
+    }
+    .services__deskr {
+        width: 77%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .more-wrapper .services__button {
+        width: 311px;
+        height: 61px;
+    }
+    .more-wrapper .services__button.button-gray {
+        width: 337px;
+    }
+    .title--1-more::after {
+        width: 204px;
+        height: 271px;
+        right: -307px;
+    }
+    .title--2-more__desk::after {
+        width: 226px;
+        height: 224px;
+        top: 70px;
+    }
+    .widescreen-deskr {
+        width: 65%;
+    }
+    .title--3-more::after {
+        width: 190px;
+        height: 276px;
+        top: 2px;
+        right: -216px;
+    }
+    .title--4-more__desk::after {
+        width: 208px;
+        height: 282px;
+        top: 12px;
+        right: -179px;
+    }
+    .title--5-more::after {
+        width: 320px;
+        height: 204px;
+        top: 39px;
+        right: -230px;
+    }
+    .services__deskr {
+        width: 57%;
     }
 }
 @media (min-width: 1440px) {
@@ -238,38 +508,84 @@
         padding-bottom: 48px;
     }
     .title--1::after {
-        background: url("../img/services-1-desk.svg") no-repeat;
         width: 169px;
         height: 225px;
         top: 106px;
         right: -82px;
     }
     .title--2::after {
-        background: url("../img/services-2-desk.svg") no-repeat;
         width: 198px;
         height: 195px;
         top: 120px;
         right: -79px;
     }
     .title--3::after {
-        background: url("../img/services-3-desk.svg") no-repeat;
         width: 155px;
         height: 223px;
         top: 103px;
         right: -84px;
     }
     .title--4::after {
-        background: url("../img/services-4-desk.svg") no-repeat;
         width: 168px;
         height: 226px;
         top: 111px;
         right: -84px;
     }
     .title--5::after {
-        background: url("../img/services-5-desk.svg") no-repeat;
         width: 197px;
         height: 127px;
         top: 21px;
         right: -81px;
+    }
+    .more-wrapper .swiper-slide {
+        grid-template-columns: 405px 1fr;
+        padding: 34px 74px 19px 215px;
+        width: 1223px;
+        height: 549px;
+    }
+    .swiper-slide__title.title-2.title--1-more, .swiper-slide__title.title-3.title--2-more, .title--2-more__desk, .swiper-slide__title.title-2.title--3-more, .title--4-more__desk, .swiper-slide__title.title-1.title--5-more {
+        font-size: 72px;
+        line-height: 82px;
+    }
+    .more-wrapper .services__button,
+    .more-wrapper .services__button.button-gray {
+        width: 403px;
+        height: 76px;
+    }
+    .title--1-more::after {
+        width: 276px;
+        height: 368px;
+        right: -360px;
+        top: -6px;
+    }
+    .title--2-more__desk {
+        width: 90%;
+    }
+    .services__deskr {
+        width: 56%;
+        padding-top: 49px;
+    }
+    .title--2-more__desk::after {
+        width: 343px;
+        height: 340px;
+        right: -195px;
+    }
+    .title--3-more::after {
+        width: 239px;
+        height: 345px;
+        top: 8px;
+        right: -251px;
+    }
+    .title--4-more__desk::after {
+        width: 244px;
+        height: 327px;
+        top: 29px;
+        right: -208px;
+    }
+    .title--5-more::after {
+        width: 375px;
+        height: 242px;
+        top: 57px;
+        right: -280px;
     }
 }
