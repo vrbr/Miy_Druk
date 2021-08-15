@@ -137,6 +137,7 @@
     -ms-grid-columns: 7% 93%;
     grid-template-columns: 7% 93%;
     margin: 15px 0;
+    width: 100%;
     border-bottom: 2px solid #d9d9d9;
 }
 .input-div::after, .input-div::before {
