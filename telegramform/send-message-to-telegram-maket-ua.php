@@ -4,10 +4,10 @@ $name = $_POST['name-calculate'];
 $phone = $_POST['phone-calculate'];
 $theme = $_POST['themeMaket'];
 $details = $_POST['details'];
-// $token = "1830383635:AAFOODPt7hqyQTgr-nQLpIxHzOZ-fPvS6Hs";
-$token = "1099190779:AAFGMtmKbijlPZWrW352VnJ_gY_2vA0Ug_Y";
-// $chat_id = "-1001559198447";
-$chat_id = "369989967";
+$token = "1830383635:AAFOODPt7hqyQTgr-nQLpIxHzOZ-fPvS6Hs";
+// $token = "1099190779:AAFGMtmKbijlPZWrW352VnJ_gY_2vA0Ug_Y"; мой
+$chat_id = "-1001559198447";
+// $chat_id = "369989967"; мой
 
 $arr = array(
   'Тема: ' => $theme,

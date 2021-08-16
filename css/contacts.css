@@ -1,4 +1,5 @@
 .contacts {
+    position: relative;
     background: url("../img/mask-bg.svg"), url("../img/mask-bg.svg");
     width: 100%;
     height: 500px;
@@ -6,6 +7,10 @@
     background-size: cover;
     background-position: 0px 0px;
     background-repeat-y: no-repeat;
+}
+.anchor-contacts {
+    position: absolute;
+    top: -65px;
 }
 .contacts__title {
     padding-bottom: 40px;
@@ -23,7 +28,9 @@
     margin: 0 auto;
 }
 .contacts-block {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 99px 14px 1fr;
     grid-template-columns: 99px 1fr;
     grid-gap: 14px;
 }
@@ -41,9 +48,16 @@
     color: #000000;
 }
 .contacts-block__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .contacts-block__address-contacts a {
     font-size: 15px;
@@ -62,9 +76,10 @@
         height: 552px;
     }
     .contacts__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-left: 60px;
-        gap: 100px;
         width: 648px;
     }
     .contacts__title {
@@ -77,12 +92,22 @@
     }
     .contacts__social-list {
         position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         top: 59px;
         right: 60px;
     }
     .contacts__social-item {
         padding-left: 20px;
+    }
+    .contacts__social-link:hover svg {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
     }
     .contacts-insta svg {
         width: 35px;
@@ -100,20 +125,39 @@
         padding-top: 0;
     }
     .contacts-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         text-align: center;
     }
+    .contacts-block:first-child {
+        margin-right: 100px;
+    }
     .contacts-block__map {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .contacts-block__map img {
         width: 200px;
         height: 200px;
-        order: 2;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
     }
     .contacts-block__map span {
         font-size: 20px;
@@ -121,9 +165,16 @@
         font-weight: 600;
     }
     .contacts-block__address-contacts {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        order: 2;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
     }
     .contacts-block__address-contacts a {
         display: block;
@@ -140,13 +191,16 @@
     }
 }
 @media (min-width: 1024px) {
-    .contacts__wrapper {
-        gap: 150px;
+    .contacts-block:first-child {
+        margin-right: 150px;
     }
 }
 @media (min-width: 1200px) {
     .contacts {
         height: 760px;
+    }
+    .anchor-contacts {
+        top: -120px;
     }
     .contacts__title {
         padding-left: 160px;
@@ -194,18 +248,18 @@
 }
 @media (min-width: 1440px) {
     .contacts {
-        padding-top: 80px;
+        padding-top: 65px;
     }
     .contacts__title {
         font-size: 72px;
         line-height: 88px;
     }
-    .contacts__wrapper {
-        gap: 193px;
+    .contacts-block:first-child {
+        margin-right: 193px;
     }
     .contacts__social-list {
         right: 275px;
-        top: 115px;
+        top: 93px;
     }
     .contacts-block__address-address {
         padding-bottom: 12px;

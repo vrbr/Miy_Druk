@@ -1,5 +1,10 @@
 .order {
+    position: relative;
     padding-bottom: 34px;
+}
+.anchor-order {
+    position: absolute;
+    top: -120px;
 }
 .order__title {
     margin: 0 auto;
@@ -75,6 +80,8 @@
         display: inline-block;
     }
     .order__box {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: auto;
     }
@@ -128,6 +135,9 @@
         right: 40px;
         bottom: 27px;
     }
+    .anchor-order {
+        top: -130px;
+    }
     .order__title {
         padding-left: 160px;
         font-size: 55px;
@@ -174,9 +184,13 @@
         right: 94px;
     }
     .order__title {
+        padding-left: 215px;
         padding-bottom: 204px;
         font-size: 72px;
         line-height: 61px;
+    }
+    .order__wrapper {
+        padding-left: 215px;
     }
     .order-box__title {
         font-size: 28px;
@@ -190,6 +204,7 @@
     }
     .order__button {
         margin-top: 14px;
+        margin-left: 215px;
         width: 403px;
     }
 }

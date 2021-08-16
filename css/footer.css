@@ -3,10 +3,20 @@
     padding-bottom: 17px;
 }
 .footer__social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .footer__social-item {
     padding-right: 16px;
+}
+.footer-insta svg:hover path,
+.footer-viber svg:hover path,
+.footer-telega svg:hover circle {
+    fill: #FFF212;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 @media (min-width: 768px) {
     .footer__social {

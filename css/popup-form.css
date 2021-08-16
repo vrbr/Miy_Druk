@@ -1,7 +1,14 @@
 .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 200px;
 }
 .form h2 {
@@ -36,9 +43,16 @@
     width: 200px;
 }
 .form__button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 200px;
 }
 .button-price, .button-send {
@@ -53,16 +67,23 @@
     font-weight: 600;
     outline: none;
     border: none;
-    box-shadow: 0px 6.24204px 12.4841px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 6.24204px 12.4841px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 6.24204px 12.4841px rgba(0, 0, 0, 0.3);
 }
 .button-price {
     margin-bottom: 14px;
     background-color: #FFF212;
 }
 .button-send {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #E3E3E3;
 }
 @media (min-width: 768px) {
@@ -77,9 +98,14 @@
         margin-bottom: 30px;
     }
     .form__button-wrapper {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         width: 100%;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .button-price {
         margin-bottom: 0;
