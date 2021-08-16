@@ -237,7 +237,7 @@
         width: 138px;
         height: 185px;
         top: -11px;
-        right: -218px;
+        right: -230px;
     }
     .title--2-more__desk,
     .title--4-more__desk {
@@ -556,7 +556,7 @@
         width: 276px;
         height: 368px;
         right: -360px;
-        top: -6px;
+        top: -16px;
     }
     .title--2-more__desk {
         width: 90%;
@@ -568,7 +568,7 @@
     .title--2-more__desk::after {
         width: 343px;
         height: 340px;
-        right: -195px;
+        right: -140px;
     }
     .title--3-more::after {
         width: 239px;
