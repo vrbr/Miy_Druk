@@ -294,6 +294,12 @@
         -ms-transform: translateY(-5px);
             transform: translateY(-5px);
 }
+.connection-telegram svg {
+    padding-bottom: 3px;
+}
+.connection-viber svg {
+    padding-top: 3px;
+}
 @media (min-width: 768px) {
     .popup-connection__content {
         padding: 50px 100px;
