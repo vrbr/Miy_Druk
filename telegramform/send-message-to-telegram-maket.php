@@ -1,8 +1,9 @@
 <?php
 
-$name = $_POST['name-connection'];
-$phone = $_POST['phone-connection'];
-$theme = $_POST['theme'];
+$name = $_POST['name-calculate'];
+$phone = $_POST['phone-calculate'];
+$theme = $_POST['themeMaket'];
+$details = $_POST['details'];
 // $token = "1830383635:AAFOODPt7hqyQTgr-nQLpIxHzOZ-fPvS6Hs";
 $token = "1099190779:AAFGMtmKbijlPZWrW352VnJ_gY_2vA0Ug_Y";
 // $chat_id = "-1001559198447";
@@ -11,7 +12,8 @@ $chat_id = "369989967";
 $arr = array(
   'Тема: ' => $theme,
   'Имя: ' => $name,
-  'Телефон: ' => $phone
+  'Телефон: ' => $phone,
+  'Детали: ' => $details
 );
 
 foreach($arr as $key => $value) {
