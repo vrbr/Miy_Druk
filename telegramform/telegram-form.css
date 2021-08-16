@@ -1,0 +1,92 @@
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: "Commissioner", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #252323;
+    background-color: #252323;
+}
+.main {
+    background-image: url("../img/mask-bg.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 20px;
+    background-size: cover;
+    height: 100%;
+}
+.img img {
+    width: 90px;
+    height: 90px;
+}
+.img {
+    width: 87.5%;
+    margin: 0 auto;
+}
+.thanks {
+    position: absolute;
+    top: calc(50% - 120px);
+    left: calc(50% - 132px);
+    width: 264px;
+    margin: 0 auto;
+}
+.thanks.error {
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    width: 200px;
+}
+.thanks__wrapper {
+    padding: 20px;
+}
+.thanks__title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .thanks {
+        width: 364px;
+        left: calc(50% - 182px);
+    }
+    .thanks.error {
+        width: 240px;
+    }
+    .thanks.error .thanks__title {
+        width: 240px;
+    }
+    .thanks__title {
+        font-size: 38px;
+        line-height: 36px;
+    }
+    .img {
+        width: 80%;
+    }
+    .img img {
+        width: 160px;
+        height: 160px;
+    }
+}
+@media (min-width: 931px) {
+    .main {
+    background-size: cover;
+    }
+}
+@media (min-width: 1024px) {
+    .thanks {
+        width: 464px;
+        left: calc(50% - 232px);
+    }
+    .thanks.error .thanks__title {
+        width: 320px;
+    }
+    .thanks.error {
+        width: 320px;
+        left: calc(50% - 180px);
+    }
+    .thanks__title {
+        font-size: 50px;
+        line-height: 47px;
+    }
+}
