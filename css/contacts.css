@@ -14,6 +14,13 @@
     font-size: 35px;
     line-height: 43px;
     color: #252323;
+    transform: translate(0px, 100%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.contacts__title.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 .contacts__social {
     display: none;
