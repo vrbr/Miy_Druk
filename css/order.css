@@ -9,16 +9,9 @@
     line-height: 31px;
     color: #fff;
     text-align: center;
-    transform: translate(-300px, 0px);
-    opacity: 0;
-    transition: all 0.8s ease 0s;
 }
 .order__title .carry {
     display: block;
-}
-.order__title.active {
-    transform: translate(0px, 0px);
-    opacity: 1;
 }
 .order__wrapper {
     padding-left: 20px;

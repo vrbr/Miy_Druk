@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="полиграфия, распечатка, печать, баннер, баннеры, фото, визитки, флаеры, календари, фотокниги, постер, плакаты, печать на футболках, печать на чашках, вывески, ламинирование, переплет, логотип, создание логотипа, обработка фото, плоттерная порезка, лайтбоксы">
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Полиграфия "Мiй друк"</title>
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -176,15 +177,15 @@
         <main class="main" id="main">
             <h1 class="visually-hidden">Полиграфия "Мiй друк"</h1>
             <section class="features">
-                <h2 class="features__title anim-items anim-no-hide">Печать и дизайн</h2>
-                <p class="features__text-mob anim-items anim-no-hide">Любой размер<br>Материал<br>Тираж</p>
-                <p class="features__text-desk anim-items anim-no-hide">Любой размер. Материал. Тираж.</p>
+                <h2 class="features__title wow animate__animated animate__fadeInLeft">Печать и дизайн</h2>
+                <p class="features__text-mob wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер<br>Материал<br>Тираж</p>
+                <p class="features__text-desk wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер. Материал. Тираж.</p>
                 <a class="button features__button button-yellow button__popup-connection" data-modal="1">Заказать онлайн</a>
                 <a class="button features__button button-gray button__popup-calculate" data-modal="2">Рассчитать стоимость</a>
             </section>
             <section class="services">
                 <div class="services__wrapper">
-                    <h2 class="services__title title-more anim-items anim-no-hide">Услуги</h2>
+                    <h2 class="services__title title-more">Услуги</h2>
                     <div class="swiper-container mySwiper">
                         <div class="swiper-wrapper more-wrapper">
                             <div class="swiper-slide">
@@ -199,7 +200,7 @@
                 </div>
             </section>
             <section class="order">
-                <h2 class="order__title anim-items anim-no-hide">Как сделать <span class="carry">заказ</span></h2>
+                <h2 class="order__title wow animate__animated animate__fadeInRight" data-wow-offset="200">Как сделать <span class="carry">заказ</span></h2>
                 <div class="order__wrapper">
                     <div class="order__box">
                         <div class="order-box">
@@ -223,7 +224,7 @@
                 <a class="button order__button button-yellow button__popup-calculate" data-modal="2">Оформить заказ</a>
             </section>
             <section class="delivery">
-                <h2 class="delivery__title anim-items anim-no-hide">Доставка</h2>
+                <h2 class="delivery__title wow animate__animated animate__fadeInUp" data-wow-offset="200">Доставка</h2>
                 <div class="delivery__wrapper">
                     <div class="delivery__box delivery-box-1">
                         <h3 class="delivery-box__title">Самовывоз</h3>
@@ -238,7 +239,7 @@
                 </div>
             </section>
             <section class="requirements">
-                <h2 class="requirements__title anim-items anim-no-hide">Требования к макетам</h2>
+                <h2 class="requirements__title wow animate__animated animate__fadeInLeft" data-wow-offset="200">Требования к макетам</h2>
                 <div class="requirements__wrapper">
                     <ul class="requirements__list">
                         <li class="requirements__item req-item">
@@ -277,8 +278,7 @@
                 </div>
             </section>
             <section class="contacts">
-                <h2 class="contacts__title anim-items anim-no-hide">Контакты</h2>
-
+                <h2 class="contacts__title wow animate__animated animate__fadeInDown" data-wow-offset="100">Контакты</h2>
                 <div class="contacts__social">
                     <ul class="contacts__social-list">
                         <li class="contacts__social-item">
@@ -500,7 +500,10 @@
         document.getElementById("checkbox2").checked = false;
     };
     </script>
-    <script src="js/anim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="js/fixed.js"></script>
     <script src="js/popups.js"></script>
 </body>

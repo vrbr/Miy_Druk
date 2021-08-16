@@ -10,13 +10,6 @@
     font-size: 35px;
     line-height: 89%;
     text-align: center;
-    transform: translate(-300px, 0px);
-    opacity: 0;
-    transition: all 0.8s ease 0s;
-}
-.requirements__title.active {
-    transform: translate(0px, 0px);
-    opacity: 1;
 }
 .requirements__list {
     margin: 0 auto;
