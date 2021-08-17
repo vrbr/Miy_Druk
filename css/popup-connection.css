@@ -43,7 +43,7 @@
 .popup-connection__content,
 .popup-form__content {
     background: #fff;
-    padding: 40px 40px;
+    padding: 50px 40px 30px;
     max-width: 730px;
     margin: 0 auto;
     position: relative;
@@ -54,7 +54,8 @@
     padding: 50px 40px 20px;
 }
 .popup-connection__content--fluid,
-.popup-form__content-fluid {
+.popup-form__content-fluid,
+.popup-connection__content-centered {
     padding-left: 0;
     padding-right: 0;
 }
@@ -104,7 +105,7 @@
 /* form-connection */
 .form-connection {
     padding-bottom: 25px;
-    width: 200px;
+    width: 70%;
 }
 .login-container {
     display: -webkit-box;
@@ -121,6 +122,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            width: 100%;
 }
 .form-connection h2 {
     font-size: 16px;
@@ -228,7 +230,7 @@
 }
 .btn {
     display: block;
-    width: 100%;
+    width: 200px;
     height: 50px;
     margin: 0 auto;
     border-radius: 7px;
@@ -296,9 +298,11 @@
 }
 .connection-telegram svg {
     padding-bottom: 3px;
+    filter: drop-shadow(0px 0px 5px rgba(55, 183, 255, 0.5));
 }
 .connection-viber svg {
     padding-top: 3px;
+    filter: drop-shadow(0px 0px 3px rgba(200, 82, 255, 0.62));
 }
 @media (min-width: 768px) {
     .popup-connection__content {
@@ -323,7 +327,8 @@
         margin: 15px 0;
         color: #252323;
     }
-    .input-div div h5 {
+    .input-div div h5,
+    .form__details-input::placeholder {
         font-size: 22px;
     }
     .input-div.two {
