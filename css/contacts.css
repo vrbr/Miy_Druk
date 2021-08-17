@@ -96,7 +96,7 @@
         display: -ms-flexbox;
         display: flex;
         top: 59px;
-        right: 60px;
+        left: 370px;
     }
     .contacts__social-item {
         padding-left: 20px;
@@ -194,6 +194,9 @@
     .contacts-block:first-child {
         margin-right: 150px;
     }
+    .contacts__social-list {
+        left: 416px;
+    }
 }
 @media (min-width: 1200px) {
     .contacts {
@@ -213,7 +216,7 @@
     }
     .contacts__social-list {
         top: 82px;
-        right: 75px;
+        left: 675px;
     }
     .contacts-telega svg {
         width: 47px;
@@ -258,7 +261,7 @@
         margin-right: 193px;
     }
     .contacts__social-list {
-        right: 275px;
+        left: 718px;
         top: 93px;
     }
     .contacts-block__address-address {

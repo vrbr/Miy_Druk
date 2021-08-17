@@ -10,13 +10,14 @@
 .footer__social-item {
     padding-right: 16px;
 }
-.footer-insta svg:hover path,
-.footer-viber svg:hover path,
-.footer-telega svg:hover circle {
-    fill: #FFF212;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+.footer-insta svg {
+    filter: drop-shadow(0px 0px 4px rgba(247, 84, 211, 0.62));
+}
+.footer-telega svg {
+    filter: drop-shadow(0px 0px 5px rgba(55, 183, 255, 0.5));
+}
+.footer-viber svg {
+    filter: drop-shadow(0px 0px 3px rgba(200, 82, 255, 0.62));
 }
 @media (min-width: 768px) {
     .footer__social {

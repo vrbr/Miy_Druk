@@ -16,6 +16,10 @@ new Swiper(".mySwiper", {
         enabled: true,
         onlyInViewport: true,
     },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
     breakpoints: {
         768: {
             spaceBetween: 25,

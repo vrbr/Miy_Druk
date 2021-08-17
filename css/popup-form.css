@@ -9,12 +9,12 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 200px;
+    width: 70%;
 }
 .form h2 {
     font-size: 20px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 400;
     padding-bottom: 25px;
     color: #252323;
 }
@@ -36,11 +36,13 @@
     font-family: "Commissioner", "Arial", sans-serif;
 }
 .form__details {
+    padding: 0;
+    padding-bottom: 20px;
     border: none;
 }
 .form__details-input {
     padding: 10px;
-    width: 200px;
+    width: 100%;
 }
 .form__button-wrapper {
     display: -webkit-box;
@@ -98,31 +100,32 @@
         margin-bottom: 30px;
     }
     .form__button-wrapper {
+        margin-bottom: 40px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
-        width: 100%;
+        width: 310px;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
     }
     .button-price {
-        margin-bottom: 0;
-    }
-    .button-price, .button-send {
-        margin: 0;
-        width: 180px;
+        height: 70px;
+        font-size: 24px;
     }
 }
 @media (min-width: 1440px) {
     .popup-form .popup-form__content-centered {
         padding: 80px 40px;
     }
+    .form__button-wrapper {
+        margin-bottom: 30px;
+    }
     .form, .form__details-input {
         width: 430px;
     }
-    .button-price, .button-send {
-        width: 210px;
+    .button-price, {
+        width: 310px;
     }
 }

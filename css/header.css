@@ -71,9 +71,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: absolute;
+    top: -4px;
+    right: 0px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -154,6 +154,9 @@
     font-size: 18px;
     line-height: 22px;
 }
+.hamburger-menu {
+    position: relative;
+}
 .hamburger__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -212,6 +215,15 @@
 }
 .hamburger__social-item {
     padding-right: 20px;
+}
+.hamburger-insta svg {
+    filter: drop-shadow(0px 0px 4px rgba(247, 84, 211, 0.62));
+}
+.hamburger-telega svg {
+    filter: drop-shadow(0px 0px 5px rgba(55, 183, 255, 0.5));
+}
+.hamburger-viber svg {
+    filter: drop-shadow(0px 0px 3px rgba(200, 82, 255, 0.62));
 }
 @-webkit-keyframes show_main {
     0% {
