@@ -298,11 +298,13 @@
 }
 .connection-telegram svg {
     padding-bottom: 3px;
-    filter: drop-shadow(0px 0px 5px rgba(55, 183, 255, 0.5));
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(55, 183, 255, 0.5));
+            filter: drop-shadow(0px 0px 5px rgba(55, 183, 255, 0.5));
 }
 .connection-viber svg {
     padding-top: 3px;
-    filter: drop-shadow(0px 0px 3px rgba(200, 82, 255, 0.62));
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(200, 82, 255, 0.62));
+            filter: drop-shadow(0px 0px 3px rgba(200, 82, 255, 0.62));
 }
 @media (min-width: 768px) {
     .popup-connection__content {
@@ -326,6 +328,18 @@
         padding-bottom: 30px;
         margin: 15px 0;
         color: #252323;
+    }
+    .form__details-input::-webkit-input-placeholder {
+        font-size: 22px;
+    }
+    .form__details-input::-moz-placeholder {
+        font-size: 22px;
+    }
+    .form__details-input:-ms-input-placeholder {
+        font-size: 22px;
+    }
+    .form__details-input::-ms-input-placeholder {
+        font-size: 22px;
     }
     .input-div div h5,
     .form__details-input::placeholder {

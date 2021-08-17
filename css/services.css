@@ -14,6 +14,9 @@
     background-position: 0px 0px;
     background-repeat-y: no-repeat;
 }
+.services__wrapper.other-wrapper {
+    padding-top: 12px;
+}
 .services__title {
     padding-bottom: 18px;
     text-align: center;
@@ -54,6 +57,10 @@
     -webkit-box-shadow: 5px 5px 15px 1px rgba(39, 92, 141, 0.1);
             box-shadow: 5px 5px 15px 1px rgba(39, 92, 141, 0.1);
     border-radius: 12px;
+}
+.swiper-slide.swiper-slide__other {
+    width: 85%;
+    max-width: 330px;
 }
 .swiper-slide.last-slide {
     margin-right: 40px !important;
@@ -99,7 +106,7 @@
     background-size: cover;
 }
 .title--2-more::after {
-    top: -30px;
+    top: -24px;
     right: -76px;
 }
 .title--3::after {
@@ -146,12 +153,13 @@
 }
 .digital-descr {
     padding-top: 6px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    width: 81%;
 }
 .widescreen-deskr {
     padding-top: 16px;
     padding-bottom: 20px;
-    width: 104%;
+    width: 81%;
 }
 .souvenir-deskr {
     padding-top: 36px;
@@ -220,7 +228,8 @@
 .back {
     position: relative;
     display: block;
-    width: 280px;
+    width: 85%;
+    max-width: 330px;
     margin: 0 auto;
     padding-bottom: 20px;
     padding-left: 26px;
@@ -264,6 +273,7 @@
         margin-left: 0;
         padding: 34px 74px 13px 60px;
         width: 80%;
+        max-width: 750px;
         height: 360px;
         border-left: none;
         border-top-left-radius: 0;
@@ -407,6 +417,7 @@
         -ms-grid-rows: 1fr 2fr 1fr;
         grid-template-rows: 1fr 2fr 1fr;
         width: 70%;
+        max-width: 850px;
         height: 370px;
     }
     .title--1-more::after {
@@ -516,7 +527,8 @@
         -ms-grid-columns: 311px 1fr;
         grid-template-columns: 311px 1fr;
         padding: 34px 74px 13px 160px;
-        width: 75%;
+        width: 82%;
+        max-width: 1200px;
         height: 470px;
     }
     .services__deskr {
@@ -656,7 +668,8 @@
         -ms-grid-columns: 405px 1fr;
         grid-template-columns: 405px 1fr;
         padding: 34px 74px 19px 215px;
-        width: 1223px;
+        width: 85%;
+        max-width: 1300px;
         height: 549px;
     }
     .swiper-slide__title.title-2.title--1-more, .swiper-slide__title.title-3.title--2-more, .title--2-more__desk, .swiper-slide__title.title-2.title--3-more, .title--4-more__desk, .swiper-slide__title.title-1.title--5-more {
