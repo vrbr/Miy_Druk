@@ -339,6 +339,9 @@
     }
     .header-desk__nav-fixed .header-desk__link {
         color: #fff;
+        -webkit-transition-duration: 0.3s;
+             -o-transition-duration: 0.3s;
+                transition-duration: 0.3s;
     }
     .header-desk__nav-fixed .header-desk__logo img,
     .header-desk__nav-fixed .header-desk__logo {
@@ -392,14 +395,14 @@
         font-size: 14px;
         font-weight: 600;
         color: #252323;
+        -webkit-transition-duration: 0.3s;
+             -o-transition-duration: 0.3s;
+                transition-duration: 0.3s;
     }
     .header-desk__link:hover {
         -webkit-transform: translateY(-4px);
             -ms-transform: translateY(-4px);
                 transform: translateY(-4px);
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
     }
 }
 @media (min-width: 1200px) {

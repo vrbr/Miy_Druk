@@ -14,13 +14,25 @@
     -webkit-filter: drop-shadow(0px 0px 4px rgba(247, 84, 211, 0.62));
             filter: drop-shadow(0px 0px 4px rgba(247, 84, 211, 0.62));
 }
+.footer-insta svg:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(247, 84, 211, 0.62));
+            filter: drop-shadow(0px 0px 10px rgba(247, 84, 211, 0.62));
+}
 .footer-telega svg {
     -webkit-filter: drop-shadow(0px 0px 5px rgba(55, 183, 255, 0.5));
             filter: drop-shadow(0px 0px 5px rgba(55, 183, 255, 0.5));
 }
+.footer-telega svg:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(55, 183, 255, 0.5));
+            filter: drop-shadow(0px 0px 10px rgba(55, 183, 255, 0.5));
+}
 .footer-viber svg {
     -webkit-filter: drop-shadow(0px 0px 3px rgba(200, 82, 255, 0.62));
             filter: drop-shadow(0px 0px 3px rgba(200, 82, 255, 0.62));
+}
+.footer-viber svg:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(200, 82, 255, 0.62));
+            filter: drop-shadow(0px 0px 10px rgba(200, 82, 255, 0.62));
 }
 @media (min-width: 768px) {
     .footer__social {
@@ -29,6 +41,16 @@
     }
     .footer__social-item {
         padding-right: 25px;
+    }
+    .footer__social-link svg {
+        -webkit-transition-duration: 0.4s;
+             -o-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+    }
+    .footer__social-link svg:hover  {
+        -webkit-transform: translateY(-4px);
+            -ms-transform: translateY(-4px);
+                transform: translateY(-4px);
     }
 }
 @media (min-width: 1200px) {

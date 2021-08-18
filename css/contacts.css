@@ -96,18 +96,20 @@
         display: -ms-flexbox;
         display: flex;
         top: 59px;
-        left: 370px;
+        left: 392px;
     }
     .contacts__social-item {
         padding-left: 20px;
+    }
+    .contacts__social-link svg {
+        -webkit-transition-duration: 0.3s;
+             -o-transition-duration: 0.3s;
+                transition-duration: 0.3s;
     }
     .contacts__social-link:hover svg {
         -webkit-transform: scale(1.2);
             -ms-transform: scale(1.2);
                 transform: scale(1.2);
-        -webkit-transition: all 0.4s;
-        -o-transition: all 0.4s;
-        transition: all 0.4s;
     }
     .contacts-insta svg {
         width: 35px;
@@ -195,7 +197,7 @@
         margin-right: 150px;
     }
     .contacts__social-list {
-        left: 416px;
+        left: 443px;
     }
 }
 @media (min-width: 1200px) {
