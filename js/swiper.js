@@ -1,6 +1,6 @@
 "use strict";
 
-new Swiper(".mySwiper", {
+const swiper1 = new Swiper(".mySwiper-services", {
     slidesPerView: "auto",
     spaceBetween: 10,
     scrollbar: {
