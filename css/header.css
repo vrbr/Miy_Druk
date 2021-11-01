@@ -336,6 +336,8 @@
     }
     .header-desk__nav-fixed .header-desk__item {
         border: none;
+        padding-left: 11px;
+        padding-right: 11px;
     }
     .header-desk__nav-fixed .header-desk__link {
         color: #fff;
@@ -377,7 +379,7 @@
         width: 100vw;
         height: 45px;
         margin-top: 26px;
-        padding-right: 50px;
+        padding-right: 11px;
         background-color: #FFF212;
     }
     .header-desk__item {
@@ -385,16 +387,20 @@
         padding-right: 9px;
         border-right: 1px solid #000;
     }
+    .header-desk__item .carry {
+        display: block;
+    }
     .header-desk__item:last-child {
         border: none;
     }
     .header-desk__link {
         display: block;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        height: 28px;
         font-size: 14px;
+        line-height: 14px;
         font-weight: 600;
         color: #252323;
+        text-align: center;
         -webkit-transition-duration: 0.3s;
              -o-transition-duration: 0.3s;
                 transition-duration: 0.3s;
@@ -404,11 +410,22 @@
             -ms-transform: translateY(-4px);
                 transform: translateY(-4px);
     }
+    .header-desk__link-1 {
+        padding-top: 7px;
+    }
+}
+@media (min-width: 1000px) {
+    .header-desk__item .carry {
+        display: inline;
+    }
+    .header-desk__link {
+        padding-top: 7px;
+    }
 }
 @media (min-width: 1200px) {
     .header-desk {
         font-size: 18px;
-        line-height: 23px;
+        line-height: 18px;
     }
     /*header-top*/
     .header-top {
@@ -438,16 +455,24 @@
         height: 160px;
     }
     .header-desk__list {
-        height: 57px;
-        padding-right: 100px;
+        height: 70px;
+        padding-right: 42px;
     }
     .header-desk__item {
+        margin-top: -18px;
         padding-left: 12px;
         padding-right: 12px;
     }
+    .header-desk__item .carry {
+        display: block;
+    }
     .header-desk__link {
+        padding-top: 0;
         font-size: 18px;
         line-height: 22px;
+    }
+    .header-desk__link-1 {
+        padding-top: 7px;
     }
 }
 @media (min-width: 1440px) {

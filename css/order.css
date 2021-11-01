@@ -1,10 +1,11 @@
 .order {
     position: relative;
     padding-bottom: 34px;
+    padding-top: 40px;
 }
 .anchor-order {
     position: absolute;
-    top: -120px;
+    top: -75px;
 }
 .order__title {
     margin: 0 auto;
@@ -62,8 +63,11 @@
     width: 87.5%;
 }
 @media (min-width: 768px) {
+    .anchor-order {
+        top: -90px;
+    }
     .order {
-        padding-top: 30px;
+        padding-top: 40px;
     }
     .order__wrapper {
         width: 768px;
@@ -128,6 +132,7 @@
 @media (min-width: 1200px) {
     .order {
         padding-bottom: 300px;
+        padding-top: 50px;
     }
     .order::after {
         width: 320px;
