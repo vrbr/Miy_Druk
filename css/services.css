@@ -29,20 +29,21 @@
     visibility: hidden;
     padding-bottom: 0;
 }
-.swiper-container.mySwiper {
+.swiper-container.mySwiper-services {
     width: 100%;
-    height: 400px;
+    height: 420px;
+    padding-bottom: 50px;
 }
-.swiper-wrapper {
+.services-wrapper {
     padding-left: 20px;
 }
-.swiper-wrapper.more-wrapper {
+.services-wrapper.more-wrapper {
     padding-left: 0;
 }
-.more-wrapper .swiper-slide {
+.more-wrapper .services-slide {
     margin: 0 auto;
 }
-.swiper-slide {
+.services-slide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -51,18 +52,18 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 280px;
-    padding: 34px 14px 13px;
+    padding: 34px 14px;
     background: #FFFFFF;
     border: 2px solid #000000;
     -webkit-box-shadow: 5px 5px 15px 1px rgba(39, 92, 141, 0.1);
             box-shadow: 5px 5px 15px 1px rgba(39, 92, 141, 0.1);
     border-radius: 12px;
 }
-.swiper-slide.swiper-slide__other {
+.sservices-slide.swiper-slide__other {
     width: 85%;
     max-width: 330px;
 }
-.swiper-slide.last-slide {
+.services-slide.last-slide {
     margin-right: 40px !important;
 }
 .swiper-slide__title {
@@ -197,33 +198,58 @@
     letter-spacing: -0.005em;
     color: #706B6B;
 }
-.swiper-pagination__wrapper {
+.services-pagination__wrapper {
     position: relative;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
 }
-.swiper-pagination__wrapper .swiper-pagination {
-    top: -65px;
-    left: 20px;
-}
-.swiper-pagination-bullet {
-    margin-right: 7px;
-    width: 11px;
-    height: 11px;
+.services-button-next,
+.services-button-prev {
+    margin-top: -19px;
+    width: 40px;
+    height: 40px;
     outline: none;
 }
-.swiper-pagination-bullet-active {
-    background: #01BBFF;
+.services-button-prev {
+    left: 12px;
 }
-.services__button {
-    width: 100%;
+.services-button-next {
+    right: 14px;
 }
-.services__button.button-yellow {
-    -webkit-box-shadow: 0px 6.24204px 12.4841px rgba(192, 183, 18, 0.31);
-            box-shadow: 0px 6.24204px 12.4841px rgba(192, 183, 18, 0.31);
-    margin-bottom: 12px;
+.services-button-next:after,
+.services-button-prev:after {
+    content: none;
 }
-.services__button.button-gray {
-    -webkit-box-shadow: 0px 6.24204px 12.4841px rgba(0, 0, 0, 0.17);
-            box-shadow: 0px 6.24204px 12.4841px rgba(0, 0, 0, 0.17);
+.swiper-button-next.services-button-next.swiper-button-disabled,
+.swiper-button-prev.services-button-prev.swiper-button-disabled {
+    opacity: 1;
+}
+.swiper-button-next.services-button-next svg path,
+.swiper-button-prev.services-button-prev svg path {
+    fill: #00AFEF;
+}
+.swiper-button-next.services-button-next.swiper-button-disabled svg path,
+.swiper-button-prev.services-button-prev.swiper-button-disabled svg path {
+    fill: #CFD0D2;
+}
+.services-pagination {
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 10px;
+}
+.services-pagination .swiper-pagination-bullet {
+    margin-right: 5px;
+    width: 9px;
+    height: 9px;
+    background: #CFD0D2;
+    outline: none;
+    opacity: 1;
+}
+.services-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #00AFEF;
 }
 .back {
     position: relative;
@@ -256,13 +282,13 @@
         text-align: left;
         font-size: 38px;
     }
-    .swiper-wrapper {
+    .services-wrapper {
         padding-left: 60px;
     }
-    .swiper-slide.last-slide {
-        margin-right: 190px !important;
+    .services-slide.last-slide {
+        margin-right: 80px !important;
     }
-    .more-wrapper .swiper-slide {
+    .more-wrapper .services-slide {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 227px 10px 1fr;
@@ -279,27 +305,27 @@
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
-    .more-wrapper .swiper-slide > *:nth-child(1) {
+    .more-wrapper .services-slide > *:nth-child(1) {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
     }
-    .more-wrapper .swiper-slide > *:nth-child(2) {
+    .more-wrapper .services-slide > *:nth-child(2) {
         -ms-grid-row: 1;
         -ms-grid-column: 3;
     }
-    .more-wrapper .swiper-slide > *:nth-child(3) {
+    .more-wrapper .services-slide > *:nth-child(3) {
         -ms-grid-row: 2;
         -ms-grid-column: 1;
     }
-    .more-wrapper .swiper-slide > *:nth-child(4) {
+    .more-wrapper .services-slide > *:nth-child(4) {
         -ms-grid-row: 2;
         -ms-grid-column: 3;
     }
-    .more-wrapper .swiper-slide > *:nth-child(5) {
+    .more-wrapper .services-slide > *:nth-child(5) {
         -ms-grid-row: 3;
         -ms-grid-column: 1;
     }
-    .more-wrapper .swiper-slide > *:nth-child(6) {
+    .more-wrapper .services-slide > *:nth-child(6) {
         -ms-grid-row: 3;
         -ms-grid-column: 3;
     }
@@ -320,12 +346,6 @@
     }
     .swiper-slide__title.title-2.title--1-more {
         width: 60%;
-    }
-    .swiper-pagination-bullet {
-        margin-right: 10px;
-    }
-    .swiper-pagination__wrapper .swiper-pagination {
-        left: 60px;
     }
     .title--1-more::after {
         width: 138px;
@@ -406,6 +426,9 @@
     .back {
         margin-left: 60px;
     }
+    .services-button-prev {
+        left: 52px;
+    }
 }
 @media (min-width: 900px) {
     .services__wrapper {
@@ -413,7 +436,7 @@
     }
 }
 @media (min-width: 1024px) {
-    .more-wrapper .swiper-slide {
+    .more-wrapper .services-slide {
         -ms-grid-rows: 1fr 2fr 1fr;
         grid-template-rows: 1fr 2fr 1fr;
         width: 70%;
@@ -457,17 +480,17 @@
         font-size: 55px;
         line-height: 71px;
     }
-    .swiper-container.mySwiper {
+    .swiper-container.mySwiper-services {
         height: 500px;
     }
-    .swiper-wrapper {
+    .services-wrapper {
         padding-left: 160px;
     }
-    .swiper-slide {
+    .services-slide {
         width: 360px;
-        padding: 20px 21px 19px;
+        padding: 20px 21px 30px;
     }
-    .swiper-slide.last-slide {
+    .sservices-slide.last-slide {
         margin-right: 290px !important;
     }
     .swiper-slide__title {
@@ -480,9 +503,17 @@
     .swiper-slide__title.title-2 {
         padding-bottom: 64px;
     }
-    .swiper-pagination__wrapper .swiper-pagination {
-        left: 160px;
-        top: -137px;
+    .services-slide.last-slide {
+        margin-right: 200px !important;
+    }
+    .services-pagination__wrapper {
+        margin-top: 7px;
+    }
+    .services-button-prev {
+        left: 152px;
+    }
+    .services-button-next {
+        right: 30px;
     }
     .title--1::after {
         width: 130px;
@@ -523,7 +554,7 @@
         font-size: 55px;
         line-height: 71px;
     }
-    .more-wrapper .swiper-slide {
+    .more-wrapper .services-slide {
         -ms-grid-columns: 311px 1fr;
         grid-template-columns: 311px 1fr;
         padding: 34px 74px 13px 160px;
@@ -602,15 +633,15 @@
         font-size: 72px;
         line-height: 88px;
     }
-    .swiper-wrapper {
+    .services-wrapper {
         padding-left: 215px;
     }
-    .swiper-container.mySwiper {
+    .swiper-container.mySwiper-services {
         height: 603px;
     }
-    .swiper-slide {
+    .services-slide {
         width: 422px;
-        padding-top: 28px;
+        padding: 28px 21px 35px;
     }
     .swiper-slide__title {
         font-size: 46px;
@@ -627,12 +658,18 @@
     .swiper-slide__title.title-3 {
         padding-bottom: 48px;
     }
-    .swiper-pagination-bullet {
-        margin-right: 10px;
+    .services-button-prev {
+        left: 207px;
     }
-    .swiper-pagination__wrapper .swiper-pagination {
-        left: 215px;
-        top: -117px;
+    .services-pagination {
+        left: 57%;
+    }
+    .services-pagination .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+    }
+    .services-slide.last-slide {
+        margin-right: 260px !important;
     }
     .title--1::after {
         width: 169px;
@@ -664,7 +701,7 @@
         top: 21px;
         right: -81px;
     }
-    .more-wrapper .swiper-slide {
+    .more-wrapper .services-slide {
         -ms-grid-columns: 405px 1fr;
         grid-template-columns: 405px 1fr;
         padding: 34px 74px 19px 215px;

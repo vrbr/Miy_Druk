@@ -3,6 +3,7 @@
     background: url("../img/mask-bg.svg"), url("../img/mask-bg.svg");
     width: 100%;
     height: 500px;
+    margin-bottom: 42px;
     padding-top: 47px;
     background-size: cover;
     background-position: 0px 0px;
@@ -74,6 +75,7 @@
     .contacts {
         position: relative;
         height: 552px;
+        margin-bottom: 20px;
     }
     .contacts__wrapper {
         display: -webkit-box;
@@ -193,6 +195,10 @@
     }
 }
 @media (min-width: 1024px) {
+    .contacts {
+        margin-bottom: 32px;
+        height: 553px;
+    }
     .contacts-block:first-child {
         margin-right: 150px;
     }
@@ -202,7 +208,7 @@
 }
 @media (min-width: 1200px) {
     .contacts {
-        height: 760px;
+        height: 816px;
     }
     .anchor-contacts {
         top: -120px;
@@ -253,7 +259,9 @@
 }
 @media (min-width: 1440px) {
     .contacts {
+        margin-bottom: 18px;
         padding-top: 65px;
+        height: 850px;
     }
     .contacts__title {
         font-size: 72px;

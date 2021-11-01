@@ -62,7 +62,7 @@
 #menu__toggle:checked ~ .hamburger {
     visibility: visible;
     right: 0;
-    z-index: 2;
+    z-index: 3;
 }
 .menu__btn {
     display: -webkit-box;
@@ -77,7 +77,7 @@
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 3;
+    z-index: 4;
 }
 .menu__btn span {
     top: 12px;

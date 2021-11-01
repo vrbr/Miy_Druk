@@ -1,6 +1,6 @@
 "use strict";
 
-new Swiper(".mySwiper", {
+const swiper2 = new Swiper(".mySwiper-works", {
     slidesPerView: "auto",
     spaceBetween: 10,
     scrollbar: {
@@ -14,14 +14,17 @@ new Swiper(".mySwiper", {
     hashNavigation: {
         watchState: true
     },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true
+    navigation: {
+        nextEl: ".works-button-next",
+        prevEl: ".works-button-prev",
     },
     pagination: {
-        el: ".swiper-pagination",
-        clickable: true
+        el: ".works-pagination",
+        clickable: true,
+        dynamicBullets: true,
     },
+    watchSlidesProgress: true,
+    watchSlidesvisibility: true,
     breakpoints: {
         768: {
         spaceBetween: 25
@@ -30,6 +33,4 @@ new Swiper(".mySwiper", {
         spaceBetween: 35
         }
     },
-    watchSlidesProgress: true,
-    watchSlidesvisibility: true
 });
