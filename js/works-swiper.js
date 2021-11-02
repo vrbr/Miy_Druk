@@ -1,8 +1,17 @@
 "use strict";
 
 const swiper2 = new Swiper(".mySwiper-works", {
-    slidesPerView: "auto",
+    slidesPerView: 1,
     spaceBetween: 10,
+    navigation: {
+        nextEl: ".works-button-next",
+        prevEl: ".works-button-prev",
+        },
+    pagination: {
+        el: ".works-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
     scrollbar: {
         el: '.swiper-scrollbar',
         draggable: true
@@ -14,23 +23,15 @@ const swiper2 = new Swiper(".mySwiper-works", {
     hashNavigation: {
         watchState: true
     },
-    navigation: {
-        nextEl: ".works-button-next",
-        prevEl: ".works-button-prev",
-    },
-    pagination: {
-        el: ".works-pagination",
-        clickable: true,
-        dynamicBullets: true,
-    },
     watchSlidesProgress: true,
     watchSlidesvisibility: true,
     breakpoints: {
         768: {
-        spaceBetween: 25
+            slidesPerView: 2,
+            spaceBetween: 20,
         },
-        1200: {
-        spaceBetween: 35
+        1024: {
+            slidesPerView: 3,
         }
     },
 });

@@ -1,7 +1,7 @@
 "use strict";
 
 const swiper3 = new Swiper(".mySwiper-clients", {
-    slidesPerView: "auto",
+    slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
     autoplay: {
@@ -31,11 +31,18 @@ const swiper3 = new Swiper(".mySwiper-clients", {
     watchSlidesProgress: true,
     watchSlidesvisibility: true,
     breakpoints: {
-        768: {
-        spaceBetween: 25
+        460: {
+            slidesPerView: 2,
         },
-        1200: {
-        spaceBetween: 35
-        }
+        618: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        1440: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
     },
 });
