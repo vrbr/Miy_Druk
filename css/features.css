@@ -30,7 +30,7 @@
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.51);
 }
 .features__text-mob {
-    padding-bottom: 158px;
+    padding-bottom: 140px;
     font-size: 25px;
     line-height: 36px;
     font-weight: 700;
@@ -40,8 +40,9 @@
 .features__text-desk {
     display: none;
 }
-.features__button {
-    margin-bottom: 16px;
+.features__button-text {
+    padding-bottom: 10px;
+    color: #fff;
 }
 @media (min-width: 425px) {
     .features {
@@ -75,7 +76,7 @@
     }
     .features__text-desk {
         display: block;
-        padding-bottom: 175px;
+        padding-bottom: 110px;
         font-size: 23px;
         line-height: 30px;
         font-weight: 700;
@@ -83,13 +84,8 @@
         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.51);
     }
     .features__button.button-yellow {
-        margin-right: 10px;
-        padding-right: 55px;
-        padding-left: 55px;
-    }
-    .features__button.button-gray {
-        padding-right: 36px;
-        padding-left: 36px;
+        padding-right: 98px;
+        padding-left: 98px;
     }
     .features__button:hover {
         -webkit-transform: translateY(-4px);
@@ -97,6 +93,9 @@
                 transform: translateY(-4px);
         -webkit-box-shadow: 0px 17px 17px rgba(0, 0, 0, 0.77);
                 box-shadow: 0px 17px 17px rgba(0, 0, 0, 0.77);
+    }
+    .features__button-text {
+        padding-bottom: 26px;
     }
 }
 @media (min-width: 1024px) {
@@ -106,7 +105,7 @@
 }
 @media (min-width: 1200px) {
     .features {
-        margin-top: 120px;
+        margin-top: 75px;
         padding-left: 160px;
         padding-bottom: 80px;
     }
@@ -119,43 +118,40 @@
         line-height: 93px;
     }
     .features__text-desk {
+        padding-bottom: 90px;
         font-size: 38px;
         line-height: 45px;
     }
     .features__button.button-yellow {
-        margin-right: 10px;
-        padding-right: 60px;
-        padding-left: 60px;
+        padding-right: 135px;
+        padding-left: 135px;
     }
-    .features__button.button-gray {
-        padding-right: 41px;
-        padding-left: 41px;
+    .features__button-text {
+        padding-bottom: 36px;
+        font-size: 26px;
     }
 }
 @media (min-width: 1440px) {
     .features {
-        margin-top: 140px;
         padding-left: 215px;
         padding-bottom: 100px;
     }
     .features::after {
-        width: 461px;
-        height: 457px;
-        top: 116px;
+        width: 429px;
+        height: 422px;
+        top: 79px;
     }
     .features__title {
         font-size: 94px;
         line-height: 115px;
     }
     .features__text-desk {
-        padding-bottom: 300px;
         font-size: 46px;
         line-height: 60px;
     }
     .features__button.button-yellow {
-        margin-right: 10px;
-        padding-right: 90px;
-        padding-left: 90px;
+        padding-right: 127px;
+        padding-left: 127px;
     }
     .features__button.button-gray {
         padding-right: 53px;

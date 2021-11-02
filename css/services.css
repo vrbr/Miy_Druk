@@ -201,9 +201,9 @@
 .services-pagination__wrapper {
     position: relative;
     display: flex;
+    width: 190px;
     height: 40px;
     align-items: center;
-    justify-content: space-between;
 }
 .services-button-next,
 .services-button-prev {
@@ -426,8 +426,8 @@
     .back {
         margin-left: 60px;
     }
-    .services-button-prev {
-        left: 52px;
+    .services-pagination__wrapper {
+        margin-left: 143px;
     }
 }
 @media (min-width: 900px) {
@@ -508,12 +508,6 @@
     }
     .services-pagination__wrapper {
         margin-top: 7px;
-    }
-    .services-button-prev {
-        left: 152px;
-    }
-    .services-button-next {
-        right: 30px;
     }
     .title--1::after {
         width: 130px;
@@ -658,11 +652,8 @@
     .swiper-slide__title.title-3 {
         padding-bottom: 48px;
     }
-    .services-button-prev {
-        left: 207px;
-    }
-    .services-pagination {
-        left: 57%;
+    .services-pagination__wrapper {
+        margin-left: 200px;
     }
     .services-pagination .swiper-pagination-bullet {
         width: 12px;

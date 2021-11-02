@@ -81,16 +81,7 @@
                             <a class="hamburger__link" href="#anchor-works">Наши работы</a>
                         </li>
                         <li class="hamburger__item">
-                            <a class="hamburger__link" href="#anchor-clients">Наши клиенты</a>
-                        </li>
-                        <li class="hamburger__item">
-                            <a class="hamburger__link" href="#anchor-order">Как сделать заказ</a>
-                        </li>
-                        <li class="hamburger__item">
                             <a class="hamburger__link" href="#anchor-delivery">Доставка</a>
-                        </li>
-                        <li class="hamburger__item">
-                            <a class="hamburger__link" href="#anchor-requirements">Требования к макетам</a>
                         </li>
                         <li class="hamburger__item">
                             <a class="hamburger__link" href="#anchor-contacts">Контакты</a>
@@ -170,19 +161,10 @@
                         <a class="header-desk__link header-desk__link-1" href="#anchor-service">Услуги</a>
                     </li>
                     <li class="header-desk__item">
-                        <a class="header-desk__link" href="#anchor-works">Наши<span class="carry"> работы</span></a>
-                    </li>
-                    <li class="header-desk__item">
-                        <a class="header-desk__link" href="#anchor-clients">Наши<span class="carry"> клиенты</span></a>
-                    </li>
-                    <li class="header-desk__item">
-                        <a class="header-desk__link" href="#anchor-order">Как сделать<span class="carry"> заказ</span></a>
+                        <a class="header-desk__link" href="#anchor-works">Наши работы</span></a>
                     </li>
                     <li class="header-desk__item">
                         <a class="header-desk__link header-desk__link-1" href="#anchor-delivery">Доставка</a>
-                    </li>
-                    <li class="header-desk__item">
-                        <a class="header-desk__link" href="#anchor-requirements">Требования<span class="carry"> к макетам</span></a>
                     </li>
                     <li class="header-desk__item">
                         <a class="header-desk__link header-desk__link-1" href="#anchor-contacts">Контакты</a>
@@ -197,8 +179,9 @@
                 <h2 class="features__title wow animate__animated animate__fadeInLeft">Печать и дизайн</h2>
                 <p class="features__text-mob wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер<br>Материал<br>Тираж</p>
                 <p class="features__text-desk wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер. Материал. Тираж.</p>
-                <a class="button features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать онлайн</a>
-                <a class="button features__button button-gray button__popup-calculate" data-modal="2" id="2">Рассчитать стоимость</a>
+                <p class="features__button-text">Закажите печать прямо сейчас</p>
+                <a class="button features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
+                <!-- <a class="button features__button button-gray button__popup-calculate" data-modal="2" id="2">Рассчитать стоимость</a> -->
             </section>
             <section class="services">
                 <a id="anchor-service" class="anchor-service"></a>
@@ -291,14 +274,31 @@
                     <h2 class="works__title wow animate__animated animate__fadeInLeft" data-wow-offset="200">Наши работы</h2>
                     <div class="swiper-container mySwiper mySwiper-works">
                         <div class="swiper-wrapper works-wrapper">
-                            <div class="swiper-slide works-slide">Slide 1</div>
-                            <div class="swiper-slide works-slide">Slide 2</div>
-                            <div class="swiper-slide works-slide">Slide 3</div>
-                            <div class="swiper-slide works-slide">Slide 4</div>
-                            <div class="swiper-slide works-slide">Slide 5</div>
-                            <div class="swiper-slide works-slide">Slide 6</div>
-                            <div class="swiper-slide works-slide">Slide 7</div>
-                            <div class="swiper-slide works-slide works-slide-last">Slide 8</div>
+                            <div class="swiper-slide works-slide">
+                                <picture>
+                                    <source media="(min-width: 1440px)" srcset="wwwww.jpg 1x, wwwww.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset="wwwww.jpg 1x, wwwww.jpg 2x">
+                                    <img src="wwwww.jpg" width="280" height="200" alt="">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide works-slide">
+                                <img src="wwwww.jpg" width="280" height="200" alt="">
+                            </div>
+                            <div class="swiper-slide works-slide">
+                                <img src="wwwww.jpg" width="280" height="200" alt="">
+                            </div>
+                            <div class="swiper-slide works-slide">
+                                <img src="wwwww.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide works-slide">
+                                <img src="wwwww.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide works-slide">
+                                <img src="wwwww.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide works-slide">
+                                <img src="wwwww.jpg" alt="">
+                            </div>
                         </div>
                         <div class="swiper-buttons">
                             <div class="swiper-button-prev works-button-prev">
@@ -318,31 +318,30 @@
             </section>
 
             <section class="clients">
-                <a id="anchor-clients" class="anchor-clients"></a>
                 <div class="clients__wrapper">
                     <h2 class="clients__title wow animate__animated animate__fadeInDown" data-wow-offset="200">Наши клиенты</h2>
                     <div class="swiper-container mySwiper mySwiper-clients">
                         <div class="swiper-wrapper clients-wrapper">
-                            <div class="swiper-slide clients-slide slide-zoloto">
-                                <img src="img/zoloto.svg" width="175" height="70" alt="">
+                            <div class="swiper-slide clients-slide">
+                                <img src="img/zoloto.svg" width="190" height="94" alt="">
                             </div>
-                            <div class="swiper-slide clients-slide slide-mida">
-                                <img src="img/mida.svg" width="175" height="43" alt="">
+                            <div class="swiper-slide clients-slide">
+                                <img src="img/fit.svg" width="190" height="94" alt="">
                             </div>
-                            <div class="swiper-slide clients-slide slide-miraton">
-                                <img src="img/miraton.svg" width="175" height="44" alt="">
+                            <div class="swiper-slide clients-slide">
+                                <img src="img/bigmag.svg" width="190" height="94" alt="">
                             </div>
-                            <div class="swiper-slide clients-slide slide-fit">
-                                <img src="img/fit.svg" width="175" height="35" alt="">
+                            <div class="swiper-slide clients-slide">
+                                <img src="img/miraton.svg" width="190" height="94" alt="">
                             </div>
-                            <div class="swiper-slide clients-slide slide-yabloki">
-                                <img src="img/yabloki.svg" width="175" height="41" alt="">
+                            <div class="swiper-slide clients-slide">
+                                <img src="img/pp.svg" width="190" height="94" alt="">
                             </div>
-                            <div class="swiper-slide clients-slide slide-bigmag">
-                                <img src="img/bigmag.svg" width="156" height="68" alt="">
+                            <div class="swiper-slide clients-slide">
+                                <img src="img/mida.svg" width="190" height="94" alt="">
                             </div>
-                            <div class="swiper-slide clients-slide slide-pp last-clients-slide">
-                                <img src="img/pp.svg" width="175" height="36" alt="">
+                            <div class="swiper-slide clients-slide">
+                                <img src="img/yabloki.svg" width="190" height="94" alt="">
                             </div>
                         </div>
                         <div class="swiper-buttons clients-buttons">
@@ -363,7 +362,6 @@
             </section>
 
             <section class="order">
-                <a id="anchor-order" class="anchor-order"></a>
                 <h2 class="order__title wow animate__animated animate__fadeInRight" data-wow-offset="200">Как сделать <span class="carry">заказ</span></h2>
                 <div class="order__wrapper">
                     <div class="order__box">
@@ -404,7 +402,6 @@
                 </div>
             </section>
             <section class="requirements">
-                <a id="anchor-requirements" class="anchor-requirements"></a>
                 <h2 class="requirements__title wow animate__animated animate__fadeInLeft" data-wow-offset="200">Требования к макетам</h2>
                 <div class="requirements__wrapper">
                     <ul class="requirements__list">
