@@ -301,6 +301,12 @@
 .dropdown-mob__link-last {
     padding-bottom: 23px;
 }
+.dropdown-mob__link-active {
+    color: #FFF212;
+}
+.dropdown-desk__link-active {
+    transform: translateX(8px);
+}
 @-webkit-keyframes show_main {
     0% {
         opacity: 0;
