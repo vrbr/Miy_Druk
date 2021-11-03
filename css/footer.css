@@ -1,97 +1,163 @@
-.footer {
+.social-block {
     position: fixed;
-    bottom: 0;
+    width: 50px;
+    height: 170px;
+    bottom: 20px;
+    right: 20px;
     z-index: 2;
-    width: 100%;
-    /* padding-top: 39px; */
-    /* background-image: url("../img/footer-bg.png"); */
-    background-size: cover;
-    background-position: 0px 11px;
-    background-repeat-y: no-repeat;
 }
-.footer__social {
-    padding-left: 20px;
-    padding-bottom: 17px;
+.social-block__icon {
+    cursor: pointer;
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    height: 35px;
+    width: 35px;
+    right: 0px;
+    bottom: 0px;
+    perspective: 1000px;
 }
-.footer__social-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.social-block__link, .social-block__label {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+.social-block__label {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;
 }
-.footer__social-item {
-    padding-right: 16px;
+.social-block__label-open {
+    display: block;
 }
-.footer-insta svg {
-    -webkit-filter: drop-shadow(0px 0px 4px rgba(247, 84, 211, 0.62));
-            filter: drop-shadow(0px 0px 4px rgba(247, 84, 211, 0.62));
+.social-block__label-open.open {
+    display: none;
 }
-.footer-insta svg:hover {
-    -webkit-filter: drop-shadow(0px 0px 10px rgba(247, 84, 211, 0.62));
-            filter: drop-shadow(0px 0px 10px rgba(247, 84, 211, 0.62));
+.social-block__label-close {
+    display: none;
 }
-.footer-telega svg {
-    -webkit-filter: drop-shadow(0px 0px 5px rgba(55, 183, 255, 0.5));
-            filter: drop-shadow(0px 0px 5px rgba(55, 183, 255, 0.5));
+.social-block__label-close.close {
+    display: block;
 }
-.footer-telega svg:hover {
-    -webkit-filter: drop-shadow(0px 0px 10px rgba(55, 183, 255, 0.5));
-            filter: drop-shadow(0px 0px 10px rgba(55, 183, 255, 0.5));
+.social-block__link {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
 }
-.footer-viber svg {
+.social-block__input {
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+.social-block__input:checked ~ .social-block__icon:nth-child(3) {
+    opacity: 1;
+    transform: translateY(-135px);
+    transition: 0.5s;
+    transition-delay: 160ms;
+}
+.social-block__input:checked ~ .social-block__icon:nth-child(4) {
+    opacity: 1;
+    transform: translateY(-90px);
+    transition: 0.5s;
+    transition-delay: 200ms;
+}
+.social-block__input:checked ~ .social-block__icon:nth-child(5) {
+    opacity: 1;
+    transform: translateY(-45px);
+    transition: 0.5s;
+    transition-delay: 240ms;
+}
+.social-block__label-open {
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(33, 255, 42, 0.65));
+        filter: drop-shadow(0px 0px 4px rgba(33, 255, 42, 0.65));
+}
+.social-block__label-open:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(33, 255, 42, 0.65));
+        filter: drop-shadow(0px 0px 10px rgba(33, 255, 42, 0.65));
+}
+.social-block__label-close{
+    -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 242, 18, 0.38));
+        filter: drop-shadow(0px 0px 6px rgba(255, 242, 18, 0.38));
+}
+.social-block__label-close:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 242, 18, 0.38));
+        filter: drop-shadow(0px 0px 10px rgba(255, 242, 18, 0.38));
+}
+.social-phone svg {
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(33, 255, 42, 0.65));
+            filter: drop-shadow(0px 0px 4px rgba(33, 255, 42, 0.65));
+}
+.social-phone svg:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(33, 255, 42, 0.65));
+            filter: drop-shadow(0px 0px 10px rgba(33, 255, 42, 0.65));
+}
+.social-viber svg {
     -webkit-filter: drop-shadow(0px 0px 3px rgba(200, 82, 255, 0.62));
             filter: drop-shadow(0px 0px 3px rgba(200, 82, 255, 0.62));
 }
-.footer-viber svg:hover {
+.social-viber svg:hover {
     -webkit-filter: drop-shadow(0px 0px 10px rgba(200, 82, 255, 0.62));
             filter: drop-shadow(0px 0px 10px rgba(200, 82, 255, 0.62));
 }
+.social-telega svg {
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(55, 183, 255, 0.5));
+            filter: drop-shadow(0px 0px 5px rgba(55, 183, 255, 0.5));
+}
+.social-telega svg:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(55, 183, 255, 0.5));
+            filter: drop-shadow(0px 0px 10px rgba(55, 183, 255, 0.5));
+}
+
 @media (min-width: 768px) {
-    .footer__social {
-        padding-left: 60px;
-        padding-bottom: 23px;
+    .social-block,
+    .social-block__label {
+        right: auto;
+        left: 13px;
     }
-    .footer__social-item {
-        padding-right: 25px;
-    }
-    .footer__social-link svg {
-        -webkit-transition-duration: 0.4s;
-             -o-transition-duration: 0.4s;
-                transition-duration: 0.4s;
-    }
-    .footer__social-link svg:hover  {
-        -webkit-transform: translateY(-4px);
-            -ms-transform: translateY(-4px);
-                transform: translateY(-4px);
+    .social-block__icon {
+        right: auto;
     }
 }
-@media (min-width: 1024px) {
-    .footer {
-        padding-top: 66px;
-    }
-}
+
 @media (min-width: 1200px) {
-    .footer__social {
-        padding-left: 160px;
-        padding-bottom: 56px;
+    .social-block {
+        width: 70px;
     }
-    .footer-insta svg {
-        width: 45px;
-        height: 45px;
+    .social-block__label {
+        bottom: 30px;
     }
-    .footer-telega svg {
-        width: 47px;
-        height: 47px;
+    .social-block, .social-block__label {
+        left: 50px;
     }
-    .footer-viber svg {
-        width: 48px;
-        height: 48px;
+    .social-block__link,
+    .social-block__label,
+    .social-block__icon,
+    .social-block__label-open,
+    .social-block__label-close,
+    .social-phone svg,
+    .social-telega svg {
+        height: 60px;
+        width: 60px;
     }
-    .footer__social-item {
-        padding-right: 38px;
+    .social-viber svg {
+        width: 60px;
+        height: 62px;
     }
-}
-@media (min-width: 1440px) {
-    .footer__social {
-        padding-left: 220px;
+    .social-block__input:checked ~ .social-block__icon:nth-child(5) {
+        transform: translateY(-80px);
+    }
+    .social-block__input:checked ~ .social-block__icon:nth-child(4) {
+        transform: translateY(-155px);
+    }
+    .social-block__input:checked ~ .social-block__icon:nth-child(3) {
+        transform: translateY(-230px);
     }
 }
