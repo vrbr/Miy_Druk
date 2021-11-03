@@ -222,13 +222,17 @@
 .swiper-button-prev.services-button-prev.swiper-button-disabled {
     opacity: 1;
 }
-.swiper-button-next.services-button-next svg path,
-.swiper-button-prev.services-button-prev svg path {
-    fill: #00AFEF;
+.swiper-button-prev.services-button-prev svg circle,
+.swiper-button-prev.services-button-prev svg path,
+.swiper-button-next.services-button-next svg circle,
+.swiper-button-next.services-button-next svg path {
+    stroke: #00AFEF;
 }
-.swiper-button-next.services-button-next.swiper-button-disabled svg path,
-.swiper-button-prev.services-button-prev.swiper-button-disabled svg path {
-    fill: #CFD0D2;
+.swiper-button-prev.services-button-prev.swiper-button-disabled svg circle,
+.swiper-button-prev.services-button-prev.swiper-button-disabled svg path,
+.swiper-button-next.services-button-next.swiper-button-disabled svg circle,
+.swiper-button-next.services-button-next.swiper-button-disabled svg path {
+    stroke: #CFD0D2;
 }
 .services-pagination {
     left: 50%;
@@ -420,7 +424,7 @@
         margin-left: 60px;
     }
     .services-pagination__wrapper {
-        margin-left: 143px;
+        margin-left: 43px;
     }
 }
 @media (min-width: 900px) {

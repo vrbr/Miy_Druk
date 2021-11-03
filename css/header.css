@@ -293,6 +293,11 @@
     padding-bottom: 5px;
     color: #fff;
 }
+.header-desk__nav-fixed .dropdown-desk__content {
+    background-color: #252323;
+    color: #fff;
+    background: linear-gradient(269.77deg, rgba(72, 68, 68, 0.6) 0.04%, rgba(37, 35, 35, 0.6) 99.64%), #252323;
+}
 .dropdown-mob__link-last {
     padding-bottom: 23px;
 }
