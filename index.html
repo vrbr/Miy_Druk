@@ -74,8 +74,27 @@
                     </div>
 
                     <ul class="hamburger__list">
-                        <li class="hamburger__item">
+                        <li class="hamburger__item dropdown-mob">
+                            <input class="dropdown-mob__input" id="checkbox" type="checkbox" checked>
+                            <i class="dropdown-mob__icon"></i>
                             <a class="hamburger__link" href="#anchor-service">Услуги</a>
+                            <ul class="dropdown-mob__content">
+                                <li class="dropdown-mob__item">
+                                    <a class="dropdown-mob__link" href="digital-ru.html">Цифровая печать</a>
+                                </li>
+                                <li class="dropdown-mob__item">
+                                    <a class="dropdown-mob__link" href="widescreen-ru.html">Широкоформатная печать</a>
+                                </li>
+                                <li class="dropdown-mob__item">
+                                    <a class="dropdown-mob__link" href="souvenir-ru.html">Сувенирная продукция</a>
+                                </li>
+                                <li class="dropdown-mob__item">
+                                    <a class="dropdown-mob__link" href="additional-ru.html">Дополнительные услуги</a>
+                                </li>
+                                <li class="dropdown-mob__item">
+                                    <a class="dropdown-mob__link dropdown-mob__link-last" href="design-ru.html">Дизайн</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="hamburger__item">
                             <a class="hamburger__link" href="#anchor-works">Наши работы</a>
@@ -157,17 +176,24 @@
                     <img src="img/logo-desk.svg" width="160" height="160" alt="Логотип полиграфии 'Мiй друк'">
                 </a>
                 <ul class="header-desk__list">
-                    <li class="header-desk__item">
-                        <a class="header-desk__link header-desk__link-1" href="#anchor-service">Услуги</a>
-                    </li>
+                    <div class="header-desk__item dropdown-desk">
+                        <a class="header-desk__link">Услуги</a>
+                        <div class="dropdown-desk__content">
+                            <a class="dropdown-desk__link" href="">Цифровая печать</a>
+                            <a class="dropdown-desk__link" href="">Широкоформатная печать</a>
+                            <a class="dropdown-desk__link" href="">Сувенирная продукция</a>
+                            <a class="dropdown-desk__link" href="">Дополнительные услуги</a>
+                            <a class="dropdown-desk__link" href="">Дизайн</a>
+                        </div>
+                    </div>
                     <li class="header-desk__item">
                         <a class="header-desk__link" href="#anchor-works">Наши работы</span></a>
                     </li>
                     <li class="header-desk__item">
-                        <a class="header-desk__link header-desk__link-1" href="#anchor-delivery">Доставка</a>
+                        <a class="header-desk__link" href="#anchor-delivery">Доставка</a>
                     </li>
                     <li class="header-desk__item">
-                        <a class="header-desk__link header-desk__link-1" href="#anchor-contacts">Контакты</a>
+                        <a class="header-desk__link" href="#anchor-contacts">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -184,7 +210,6 @@
                 <!-- <a class="button features__button button-gray button__popup-calculate" data-modal="2" id="2">Рассчитать стоимость</a> -->
             </section>
             <section class="services">
-                <a id="anchor-service" class="anchor-service"></a>
                 <div class="services__wrapper">
                     <h2 class="services__title wow animate__animated animate__fadeInUp" data-wow-offset="200">Услуги</h2>
                     <div class="swiper-container mySwiper mySwiper-services">
