@@ -74,8 +74,27 @@
                     </div>
 
                     <ul class="hamburger__list">
-                        <li class="hamburger__item">
+                        <li class="hamburger__item dropdown-mob">
+                            <input class="dropdown-mob__input" id="checkbox" type="checkbox" checked>
+                            <i class="dropdown-mob__icon"></i>
                             <a class="hamburger__link" href="#anchor-service">Услуги</a>
+                            <ul class="dropdown-mob__content">
+                                <li class="dropdown-mob__item">
+                                    <a class="dropdown-mob__link" href="digital-ru.html">Цифровая печать</a>
+                                </li>
+                                <li class="dropdown-mob__item">
+                                    <a class="dropdown-mob__link" href="widescreen-ru.html">Широкоформатная печать</a>
+                                </li>
+                                <li class="dropdown-mob__item">
+                                    <a class="dropdown-mob__link" href="souvenir-ru.html">Сувенирная продукция</a>
+                                </li>
+                                <li class="dropdown-mob__item">
+                                    <a class="dropdown-mob__link" href="additional-ru.html">Дополнительные услуги</a>
+                                </li>
+                                <li class="dropdown-mob__item">
+                                    <a class="dropdown-mob__link dropdown-mob__link-last" href="design-ru.html">Дизайн</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="hamburger__item">
                             <a class="hamburger__link" href="#anchor-works">Наши работы</a>
@@ -157,17 +176,24 @@
                     <img src="img/logo-desk.svg" width="160" height="160" alt="Логотип полиграфии 'Мiй друк'">
                 </a>
                 <ul class="header-desk__list">
-                    <li class="header-desk__item">
-                        <a class="header-desk__link header-desk__link-1" href="#anchor-service">Услуги</a>
-                    </li>
+                    <div class="header-desk__item dropdown-desk">
+                        <a class="header-desk__link">Услуги</a>
+                        <div class="dropdown-desk__content">
+                            <a class="dropdown-desk__link" href="">Цифровая печать</a>
+                            <a class="dropdown-desk__link" href="">Широкоформатная печать</a>
+                            <a class="dropdown-desk__link" href="">Сувенирная продукция</a>
+                            <a class="dropdown-desk__link" href="">Дополнительные услуги</a>
+                            <a class="dropdown-desk__link" href="">Дизайн</a>
+                        </div>
+                    </div>
                     <li class="header-desk__item">
                         <a class="header-desk__link" href="#anchor-works">Наши работы</span></a>
                     </li>
                     <li class="header-desk__item">
-                        <a class="header-desk__link header-desk__link-1" href="#anchor-delivery">Доставка</a>
+                        <a class="header-desk__link" href="#anchor-delivery">Доставка</a>
                     </li>
                     <li class="header-desk__item">
-                        <a class="header-desk__link header-desk__link-1" href="#anchor-contacts">Контакты</a>
+                        <a class="header-desk__link" href="#anchor-contacts">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -184,7 +210,6 @@
                 <!-- <a class="button features__button button-gray button__popup-calculate" data-modal="2" id="2">Рассчитать стоимость</a> -->
             </section>
             <section class="services">
-                <a id="anchor-service" class="anchor-service"></a>
                 <div class="services__wrapper">
                     <h2 class="services__title wow animate__animated animate__fadeInUp" data-wow-offset="200">Услуги</h2>
                     <div class="swiper-container mySwiper mySwiper-services">
@@ -253,14 +278,16 @@
                         </div>
                         <div class="swiper-pagination__wrapper services-pagination__wrapper">
                             <div class="swiper-button-prev services-button-prev">
-                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.05 12.2542V15.7958H6.8L16.5396 25.5354L14.025 28.05L-2.70208e-07 14.025L14.025 -1.35104e-07L16.5396 2.51458L6.8 12.2542H28.05Z" fill="#CFD0D2"/>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="13.7402" transform="rotate(-180 15 15)" stroke="#CFD0D2" stroke-width="2.51953"/>
+                                    <path d="M17.4922 21.2402L11.2227 15L17.4922 8.73047" stroke="#CFD0D2" stroke-width="2.51953" stroke-linecap="round"/>
                                 </svg>
                             </div>
                             <div class="swiper-pagination services-pagination"></div>
                             <div class="swiper-button-next services-button-next">
-                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.000786015 15.7959L0.000786015 12.2542L21.2508 12.2542L11.5112 2.51464L14.0258 5.35933e-05L28.0508 14.0251L14.0258 28.05L11.5112 25.5355L21.2508 15.7959L0.000786015 15.7959Z" fill="#CFD0D2"/>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="13.7402" stroke="#CFD0D2" stroke-width="2.51953"/>
+                                    <path d="M12.5078 8.75977L18.7773 15L12.5078 21.2695" stroke="#CFD0D2" stroke-width="2.51953" stroke-linecap="round"/>
                                 </svg>
                             </div>
                         </div>
@@ -303,14 +330,16 @@
                         </div>
                         <div class="swiper-buttons">
                             <div class="swiper-button-prev works-button-prev">
-                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.05 12.2542V15.7958H6.8L16.5396 25.5354L14.025 28.05L-2.70208e-07 14.025L14.025 -1.35104e-07L16.5396 2.51458L6.8 12.2542H28.05Z" fill="#CFD0D2"/>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="13.7402" transform="rotate(-180 15 15)" stroke="#CFD0D2" stroke-width="2.51953"/>
+                                    <path d="M17.4922 21.2402L11.2227 15L17.4922 8.73047" stroke="#CFD0D2" stroke-width="2.51953" stroke-linecap="round"/>
                                 </svg>
                             </div>
                             <div class="swiper-pagination works-pagination"></div>
                             <div class="swiper-button-next works-button-next">
-                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.000786015 15.7959L0.000786015 12.2542L21.2508 12.2542L11.5112 2.51464L14.0258 5.35933e-05L28.0508 14.0251L14.0258 28.05L11.5112 25.5355L21.2508 15.7959L0.000786015 15.7959Z" fill="#CFD0D2"/>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="13.7402" stroke="#CFD0D2" stroke-width="2.51953"/>
+                                    <path d="M12.5078 8.75977L18.7773 15L12.5078 21.2695" stroke="#CFD0D2" stroke-width="2.51953" stroke-linecap="round"/>
                                 </svg>
                             </div>
                         </div>
@@ -347,14 +376,16 @@
                         </div>
                         <div class="swiper-buttons clients-buttons">
                             <div class="swiper-button-prev clients-button-prev">
-                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.05 12.2542V15.7958H6.8L16.5396 25.5354L14.025 28.05L-2.70208e-07 14.025L14.025 -1.35104e-07L16.5396 2.51458L6.8 12.2542H28.05Z" fill="#CFD0D2"/>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="13.7402" transform="rotate(-180 15 15)" stroke="#CFD0D2" stroke-width="2.51953"/>
+                                    <path d="M17.4922 21.2402L11.2227 15L17.4922 8.73047" stroke="#CFD0D2" stroke-width="2.51953" stroke-linecap="round"/>
                                 </svg>
                             </div>
                             <div class="swiper-pagination clients-pagination"></div>
                             <div class="swiper-button-next clients-button-next">
-                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.000786015 15.7959L0.000786015 12.2542L21.2508 12.2542L11.5112 2.51464L14.0258 5.35933e-05L28.0508 14.0251L14.0258 28.05L11.5112 25.5355L21.2508 15.7959L0.000786015 15.7959Z" fill="#CFD0D2"/>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="13.7402" stroke="#CFD0D2" stroke-width="2.51953"/>
+                                    <path d="M12.5078 8.75977L18.7773 15L12.5078 21.2695" stroke="#CFD0D2" stroke-width="2.51953" stroke-linecap="round"/>
                                 </svg>
                             </div>
                         </div>

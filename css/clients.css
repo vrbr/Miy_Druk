@@ -48,9 +48,11 @@
 .clients-button-prev:after {
     content: none;
 }
-.clients-button-next.clients-button-next svg path,
-.clients-button-prev.clients-button-prev svg path {
-    fill: #00AFEF;
+.swiper-button-prev.clients-button-prev svg circle,
+.swiper-button-prev.clients-button-prev svg path,
+.swiper-button-next.clients-button-next svg circle,
+.swiper-button-next.clients-button-next svg path {
+    stroke: #00AFEF;
 }
 .clients-pagination {
     padding-top: 10px;

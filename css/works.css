@@ -50,7 +50,7 @@
     left: -7px;
 }
 .works-button-next {
-    right: 0;
+    right: -5px;
 }
 .works-button-next:after,
 .works-button-prev:after {
@@ -60,13 +60,17 @@
 .swiper-button-prev.works-button-prev.swiper-button-disabled {
     opacity: 1;
 }
-.swiper-button-next.works-button-next svg path,
-.swiper-button-prev.works-button-prev svg path {
-    fill: #00AFEF;
+.swiper-button-prev.works-button-prev svg circle,
+.swiper-button-prev.works-button-prev svg path,
+.swiper-button-next.works-button-next svg circle,
+.swiper-button-next.works-button-next svg path {
+    stroke: #00AFEF;
 }
-.swiper-button-next.works-button-next.swiper-button-disabled svg path,
-.swiper-button-prev.works-button-prev.swiper-button-disabled svg path {
-    fill: #CFD0D2;
+.swiper-button-prev.works-button-prev.swiper-button-disabled svg circle,
+.swiper-button-prev.works-button-prev.swiper-button-disabled svg path,
+.swiper-button-next.works-button-next.swiper-button-disabled svg circle,
+.swiper-button-next.works-button-next.swiper-button-disabled svg path {
+    stroke: #CFD0D2;
 }
 .works-pagination {
     padding-top: 10px;
