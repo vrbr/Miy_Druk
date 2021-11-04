@@ -209,28 +209,50 @@
                 <a class="button features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
                 <!-- <a class="button features__button button-gray button__popup-calculate" data-modal="2" id="2">Рассчитать стоимость</a> -->
             </section>
-            <section class="services">
-                <a id="anchor-service" class="anchor-service"></a>
-                <div class="services__wrapper other-wrapper">
-                    <h2 class="services__title title-more anim-items anim-no-hide">Услуги</h2>
-                    <a class="back" href="index.html">Вернуться на главную</a>
-                    <div class="swiper-container mySwiper">
-                        <div class="swiper-wrapper more-wrapper">
-                            <div class="swiper-slide swiper-slide__other">
-                                <h3 class="swiper-slide__title title-2 title--1-more">Цифровая<br>печать</h3>
-                                <p class="services__deskr digital-descr">Визитки, флаера, буклеты, листовки,
-                                    каталоги, плакаты, сертификаты,
-                                    дипломы, меню, пригласительные,
-                                    папки, бланки, календари, фото,
-                                    открытки, конверты, методички,
-                                    стикеры, фотокниги и др. </p>
-                                <a class="button services__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать в один клик</a>
-                                <a class="button services__button button-gray button__popup-calculate" data-modal="2" id="2">Рассчитать стоимость</a>
+
+            <section class="services-digital">
+                <div class="services__wrapper separate-digital">
+                    <div class="separate-digital__wrapper">
+                        <h3 class="separate-digital__title">Цифровая <span class="carry">печать</span></h3>
+                        <div class="separate-digital__box">
+                            <div class="separate-digital__button">
+                                <p class="separate-digital__button-desc">Визитки</p>
+                                <img class="separate-digital__img" src="icon.jpg" alt="">
+                            </div>
+                            <div class="separate-digital__button">
+                                <p class="separate-digital__button-desc">Каталоги</p>
+                                <img class="separate-digital__img" src="icon.jpg" alt="">
+                            </div>
+                            <div class="separate-digital__button">
+                                <p class="separate-digital__button-desc">Постеры</p>
+                                <img class="separate-digital__img" src="icon.jpg" alt="">
+                            </div>
+                            <div class="separate-digital__button">
+                                <p class="separate-digital__button-desc">Журналы</p>
+                                <img class="separate-digital__img" src="icon.jpg" alt="">
+                            </div>
+                            <div class="separate-digital__button">
+                                <p class="separate-digital__button-desc">Стикеры</p>
+                                <img class="separate-digital__img" src="icon.jpg" alt="">
+                            </div>
+                            <div class="separate-digital__button">
+                                <p class="separate-digital__button-desc">Буклеты</p>
+                                <img class="separate-digital__img" src="icon.jpg" alt="">
+                            </div>
+                            <div class="separate-digital__button">
+                                <p class="separate-digital__button-desc">Листовки</p>
+                                <img class="separate-digital__img" src="icon.jpg" alt="">
+                            </div>
+                            <div class="separate-digital__button">
+                                <p class="separate-digital__button-desc">Брошюры</p>
+                                <img class="separate-digital__img" src="icon.jpg" alt="">
                             </div>
                         </div>
                     </div>
+                    <a class="back-digital" href="index.html">Вернуться на главную</a>
                 </div>
             </section>
+
             <section class="works">
                 <a id="anchor-works" class="anchor-works"></a>
                 <div class="works__wrapper">
@@ -358,7 +380,7 @@
                 <div class="delivery__wrapper">
                     <div class="delivery__box delivery-box-1">
                         <h3 class="delivery-box__title">Самовывоз</h3>
-                        <p class="delivery-box__info">Киев, м. Позняки,<br>ул. Мишуги 3в, <span class="carry">оф.23 (3 этаж)</span></p>
+                        <p class="delivery-box__info">Киев, м. Позняки,<br>ул. Мишуги 3в, <span class="carry">оф.23 (3 этаж)</span><strong class="issue">(выдача заказов)</strong></p>
                         <p class="delivery-box__info">Запорожье,<br>ул. Лермонтова 14</p>
                     </div>
                     <div class="delivery__box delivery-box-2">
@@ -657,7 +679,7 @@
                                     <input class="input-connection" type="tel" name="phone-connection" tabindex="0" required>
                                 </div>
                             </div>
-                            <input type="submit" class="btn" id="1" value="Заказать звонок">
+                            <input type="submit" class="btn" id="1" value="Заказать">
                             <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme" value="Заказана консультация">
                         </form>
                     </div>

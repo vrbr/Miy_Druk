@@ -80,7 +80,7 @@
                             <a class="hamburger__link" href="#anchor-service">Услуги</a>
                             <ul class="dropdown-mob__content">
                                 <li class="dropdown-mob__item">
-                                    <a class="dropdown-mob__link" href="digital-ru.html">Цифровая печать</a>
+                                    <a class="dropdown-mob__link" href="widescreen-ru.html">Цифровая печать</a>
                                 </li>
                                 <li class="dropdown-mob__item">
                                     <a class="dropdown-mob__link dropdown-mob__link-active">Широкоформатная печать</a>
@@ -179,7 +179,7 @@
                     <div class="header-desk__item dropdown-desk">
                         <a class="header-desk__link">Услуги</a>
                         <div class="dropdown-desk__content">
-                            <a class="dropdown-desk__link" href="digital-ru.html">Цифровая печать</a>
+                            <a class="dropdown-desk__link" href="widescreen-ru.html">Цифровая печать</a>
                             <a class="dropdown-desk__link dropdown-desk__link-active">Широкоформатная печать</a>
                             <a class="dropdown-desk__link" href="souvenir-ru.html">Сувенирная продукция</a>
                             <a class="dropdown-desk__link" href="additional-ru.html">Дополнительные услуги</a>
@@ -209,25 +209,43 @@
                 <a class="button features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
                 <!-- <a class="button features__button button-gray button__popup-calculate" data-modal="2" id="2">Рассчитать стоимость</a> -->
             </section>
-            <section class="services">
-                <a id="anchor-service" class="anchor-service"></a>
-                <div class="services__wrapper other-wrapper">
-                    <h2 class="services__title title-more anim-items anim-no-hide">Услуги</h2>
-                    <a class="back" href="index.html">Вернуться на главную</a>
-                    <div class="swiper-container mySwiper">
-                        <div class="swiper-wrapper more-wrapper">
-                            <div class="swiper-slide swiper-slide__other">
-                                <h3 class="swiper-slide__title title-3 title--2 title--2-more">Широко-<br>форматная<br>печать</h3>
-                                <h3 class="title--2-more__desk">Широкоформатная<br>печать</h3>
-                                    <p class="services__deskr widescreen-deskr">Баннер, Oracal,постеры, фотообои, плакаты.
-                                        печать на холсте, пленке, бумаге, интерьерная, печать city, UV-Печать  (ПВХ пластик, Акрил, ПЭТ, Oracal) и др.</p>
-                                <a class="button services__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать в один клик</a>
-                                <a class="button services__button button-gray button__popup-calculate" data-modal="2" id="2">Рассчитать стоимость</a>
+
+            <section class="services-widescreen">
+                <div class="services__wrapper separate-widescreen">
+                    <div class="separate-widescreen__wrapper">
+                        <h3 class="separate-widescreen__title">Широко-<br>форматная <span class="carry">печать</span></h3>
+                        <h3 class="separate-widescreen__title-desk">Широкоформатная <span class="carry">печать</span></h3>
+                        <div class="separate-widescreen__box">
+                            <div class="separate-widescreen__button">
+                                <p class="separate-widescreen__button-desc">Печать на бумаге</p>
+                                <img class="separate-widescreen__img" src="icon.jpg" alt="">
+                            </div>
+                            <div class="separate-widescreen__button">
+                                <p class="separate-widescreen__button-desc">Печать на холсте</p>
+                                <img class="separate-widescreen__img" src="icon.jpg" alt="">
+                            </div>
+                            <div class="separate-widescreen__button">
+                                <p class="separate-widescreen__button-desc">Печать на баннере</p>
+                                <img class="separate-widescreen__img" src="icon.jpg" alt="">
+                            </div>
+                            <div class="separate-widescreen__button button-1">
+                                <p class="separate-widescreen__button-desc">Плакаты</p>
+                                <img class="separate-widescreen__img" src="icon.jpg" alt="">
+                            </div>
+                            <div class="separate-widescreen__button">
+                                <p class="separate-widescreen__button-desc">Печать флага</p>
+                                <img class="separate-widescreen__img" src="icon.jpg" alt="">
+                            </div>
+                            <div class="separate-widescreen__button">
+                                <p class="separate-widescreen__button-desc">Печать на пленке</p>
+                                <img class="separate-widescreen__img" src="icon.jpg" alt="">
                             </div>
                         </div>
                     </div>
+                    <a class="back-widescreen" href="index.html">Вернуться на главную</a>
                 </div>
             </section>
+
             <section class="works">
                 <a id="anchor-works" class="anchor-works"></a>
                 <div class="works__wrapper">
@@ -355,7 +373,7 @@
                 <div class="delivery__wrapper">
                     <div class="delivery__box delivery-box-1">
                         <h3 class="delivery-box__title">Самовывоз</h3>
-                        <p class="delivery-box__info">Киев, м. Позняки,<br>ул. Мишуги 3в, <span class="carry">оф.23 (3 этаж)</span></p>
+                        <p class="delivery-box__info">Киев, м. Позняки,<br>ул. Мишуги 3в, <span class="carry">оф.23 (3 этаж)</span><strong class="issue">(выдача заказов)</strong></p>
                         <p class="delivery-box__info">Запорожье,<br>ул. Лермонтова 14</p>
                     </div>
                     <div class="delivery__box delivery-box-2">
@@ -653,7 +671,7 @@
                                     <input class="input-connection" type="tel" name="phone-connection" tabindex="0" required>
                                 </div>
                             </div>
-                            <input type="submit" class="btn" id="1" value="Заказать звонок">
+                            <input type="submit" class="btn" id="1" value="Заказать">
                             <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme" value="Заказана консультация">
                         </form>
                     </div>
