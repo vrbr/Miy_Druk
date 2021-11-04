@@ -1,3 +1,11 @@
+.separate-img {
+    width: 120px;
+    height: 120px;
+    background-color: #C2C2C2;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
 .back-digital {
     position: relative;
     display: block;
@@ -357,6 +365,10 @@
 }
 
 @media (min-width: 768px) {
+    .separate-img {
+        width: 150px;
+        height: 150px;
+    }
     .services__wrapper.separate-digital {
         padding-top: 60px;
         height: 940px;
@@ -377,10 +389,6 @@
         padding-bottom: 10px;
         width: 150px;
         font-size: 20px;
-    }
-    .separate-digital__img {
-        width: 150px;
-        height: 150px;
     }
     .back-digital {
         margin-left: 60px;
@@ -425,10 +433,6 @@
         width: 150px;
         font-size: 20px;
     }
-    .separate-widescreen__img {
-        width: 150px;
-        height: 150px;
-    }
     .back-widescreen {
         margin-left: 60px;
         font-size: 18px;
@@ -462,10 +466,6 @@
     .separate-design__button-desc.button-4 {
         padding-top: 19px;
     }
-    .separate-design__img {
-        width: 150px;
-        height: 150px;
-    }
     .back-design {
         margin-left: 60px;
         font-size: 18px;
@@ -494,10 +494,6 @@
     }
     .separate-souvenir__button-desc.button-3 {
         width: 141px;
-    }
-    .separate-souvenir__img {
-        width: 150px;
-        height: 150px;
     }
     .back-souvenir {
         margin-left: 60px;
@@ -623,6 +619,10 @@
 }
 
 @media (min-width: 1200px) {
+    .separate-img {
+        width: 180px;
+        height: 180px;
+    }
     .back-digital {
         margin-left: 160px;
         padding-left: 31px;
@@ -655,10 +655,6 @@
     .separate-digital__button-desc {
         width: 180px;
         font-size: 26px;
-    }
-    .separate-digital__img {
-        width: 180px;
-        height: 180px;
     }
     /*widescreen*/
     .back-widescreen {
@@ -700,10 +696,6 @@
     .separate-widescreen__button.button-5 {
         padding-top: 23px;
     }
-    .separate-widescreen__img {
-        width: 180px;
-        height: 180px;
-    }
     /*design*/
     .back-design {
         margin-left: 160px;
@@ -738,10 +730,6 @@
     }
     .separate-design__button-desc.button-3 {
         width: 191px;
-    }
-    .separate-design__img {
-        width: 180px;
-        height: 180px;
     }
     /*souvenir*/
     .back-souvenir {
@@ -780,10 +768,6 @@
     }
     .separate-souvenir__button-desc.button-3 {
         width: 180px;
-    }
-    .separate-souvenir__img {
-        width: 180px;
-        height: 180px;
     }
     /*additional*/
     .services__wrapper.separate-additional {
