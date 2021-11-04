@@ -305,7 +305,18 @@
     color: #FFF212;
 }
 .dropdown-desk__link-active {
-    transform: translateX(8px);
+    position: relative;
+    transform: translateX(18px);
+}
+.dropdown-desk__link-active::before {
+    position: absolute;
+    content: "";
+    background: url("../img/mark.svg");
+    width: 16px;
+    height: 11px;
+    left: -18px;
+    bottom: 2px;
+    background-size: cover;
 }
 @-webkit-keyframes show_main {
     0% {
@@ -567,6 +578,15 @@
         height: 50px;
         font-size: 18px;
         line-height: 22px;
+    }
+    .dropdown-desk__link-active {
+        transform: translateX(21px);
+    }
+    .dropdown-desk__link-active::before {
+        width: 19px;
+        height: 13px;
+        left: -21px;
+        bottom: 3px;
     }
     .dropdown-desk__content {
         top: 50px;
