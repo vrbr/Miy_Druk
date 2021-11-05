@@ -5,6 +5,21 @@
     border: 1px solid #000;
     border-radius: 5px;
 }
+.separate-order__button {
+    display: none;
+    position: absolute;
+    bottom: 56px;
+    left: 14px;
+    background-color: #FFF212;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: #000;
+    border-radius: 7px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.57);
+    padding: 10px 28px;
+}
 .back-digital,
 .back-widescreen,
 .back-design,
@@ -49,6 +64,7 @@
     font-weight: 800;
     font-size: 35px;
     line-height: 43px;
+    text-align: center;
     color: #252323;
 }
 .separate-digital__title .carry,
@@ -64,13 +80,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 15px;
+    text-align: center;
 }
 .separate-digital__button-desc,
 .separate-widescreen__button-desc,
 .separate-design__button-desc,
 .separate-souvenir__button-desc {
     padding-bottom: 5px;
-    width: 120px;
     text-align: center;
     line-height: 20px;
 }
@@ -87,13 +103,7 @@
 }
 .services__wrapper.separate-widescreen {
     padding-top: 55px;
-    height: 900px;
-}
-.separate-widescreen__button.button-1 {
-    padding-top: 19px;
-}
-.separate-widescreen__button .button-6 {
-    width: 119px;
+    height: 870px;
 }
 
 /*design*/
@@ -101,21 +111,11 @@
     padding-top: 55px;
     height: 866px;
 }
-.separate-design__button-desc.button-2 {
-    padding-top: 23px;
-}
-.separate-design__button-desc.button-3 {
-    width: 135px;
-    margin-left: -5px
-}
 
 /*souvenir*/
 .services__wrapper.separate-souvenir {
     padding-top: 55px;
     height: 1018px;
-}
-.separate-souvenir__button-desc.button-1 {
-    padding-top: 20px;
 }
 
 /*additional*/
@@ -184,21 +184,18 @@
     /*widescreen*/
     .services__wrapper.separate-widescreen,
     .services__wrapper.separate-design {
-        height: 667px;
+        height: 640px;
     }
     .separate-widescreen__title .carry {
         display: inline;
-    }
-    /*design*/
-    .separate-design__button-desc.button-2 {
-        padding-top: 19px;
     }
     /*souvenir*/
     .services__wrapper.separate-souvenir {
         height: 850px;
     }
-    .separate-souvenir__button-desc.button-2 {
-        padding-top: 20px;
+    .separate-design__button .button-1 {
+        width: 140px;
+        margin: 0 auto;
     }
 }
 
@@ -220,6 +217,15 @@
 }
 
 @media (min-width: 768px) {
+    .separate-order {
+        position: relative;
+    }
+    .separate-order:hover {
+        cursor: pointer;
+    }
+    .separate-order:hover .separate-order__button {
+        display: block;
+    }
     .separate-img {
         width: 150px;
         height: 150px;
@@ -240,6 +246,7 @@
     .separate-souvenir__title {
         padding-bottom: 35px;
         font-size: 38px;
+        text-align: left;
     }
     .separate-digital__box,
     .separate-widescreen__box,
@@ -247,6 +254,7 @@
     .separate-souvenir__box {
         grid-template-columns: repeat(3, 1fr);
         grid-row-gap: 25px;
+        text-align: left;
     }
     .separate-digital__button-desc,
     .separate-widescreen__button-desc,
@@ -267,7 +275,7 @@
     /*widescreen*/
     .services__wrapper.separate-widescreen {
         padding-top: 60px;
-        height: 775px;
+        height: 740px;
     }
     .separate-widescreen__title {
         display: none;
@@ -280,13 +288,6 @@
         font-weight: 800;
         color: #252323;
     }
-    .separate-widescreen__button .button-2 {
-        width: 151px;
-    }
-    .separate-widescreen__button .button-6 {
-        width: 150px;
-        padding-top: 23px;
-    }
     .separate-widescreen__title-desk .carry {
         display: block;
     }
@@ -295,20 +296,10 @@
         padding-top: 60px;
         height: 750px;
     }
-    .separate-design__button-desc.button-3 {
-        width: 150px;
-        margin-left: 0;
-    }
-    .separate-design__button-desc.button-4 {
-        padding-top: 19px;
-    }
     /*souvenir*/
     .services__wrapper.separate-souvenir {
         padding-top: 60px;
         height: 997px;
-    }
-    .separate-souvenir__button-desc.button-3 {
-        width: 141px;
     }
     /*additional*/
     .separate-additional__wrapper {
@@ -359,6 +350,10 @@
         width: 225px;
         height: 50px;
     }
+    .separate-design__button .button-1 {
+        width: 155px;
+        margin: 0;
+    }
 }
 
 @media (min-width: 860px) {
@@ -375,19 +370,6 @@
     }
     .services__wrapper.separate-digital {
         height: 728px;
-    }
-    /*widescreen*/
-    .services__wrapper.separate-widescreen {
-        height: 754px;
-    }
-    .separate-widescreen__button.button-1 {
-        padding-top: 19px;
-    }
-    .separate-widescreen__button.button-3 {
-        padding-top: 0;
-    }
-    .separate-widescreen__button.button-4 {
-        padding-top: 23px;
     }
     /*souvenir*/
     .services__wrapper.separate-souvenir {
@@ -415,6 +397,9 @@
     .separate-additional__descr {
         width: 69%;
     }
+    .services__wrapper.separate-widescreen {
+        height: 755px;
+    }
 }
 
 @media (min-width: 1160px) {
@@ -424,6 +409,12 @@
 }
 
 @media (min-width: 1200px) {
+    .separate-order__button {
+        bottom: 72px;
+        left: 14px;
+        font-size: 16px;
+        padding: 12px 40px;
+    }
     .separate-img {
         width: 180px;
         height: 180px;
@@ -475,6 +466,10 @@
     .separate-design__button-desc {
         width: 180px;
         font-size: 26px;
+        line-height: 26px;
+    }
+    .separate-design__button .button-1 {
+        width: 200px;
     }
     /*widescreen*/
     .services__wrapper.separate-widescreen {
@@ -487,17 +482,6 @@
         font-size: 55px;
         line-height: 71px;
     }
-    .separate-widescreen__button .button-6,
-    .separate-widescreen__button .button-2,
-    .separate-souvenir__button-desc.button-3 {
-        width: 180px;
-    }
-    .separate-widescreen__button.button-5 {
-        padding-top: 23px;
-    }
-    .separate-widescreen__button.button-3 {
-        padding-top: 19px;
-    }
     /*design*/
     .services__wrapper.separate-design {
         padding-top: 45px;
@@ -509,14 +493,11 @@
         font-size: 55px;
         line-height: 71px;
     }
-    .separate-design__button-desc.button-3 {
-        width: 191px;
-    }
     /*souvenir*/
     .services__wrapper.separate-souvenir {
         padding-top: 45px;
         background-size: cover;
-        height: 797px;
+        height: 810px;
     }
     .separate-souvenir__title {
         padding-bottom: 40px;
@@ -571,7 +552,7 @@
     }
 }
 
-@media (min-width: 1337px) {
+@media (min-width: 1367px) {
     .services__wrapper.separate-design {
         background-size: contain;
     }

@@ -94,13 +94,10 @@
     }
     .form h2 {
         padding-top: 10px;
-        font-size: 29px;
-    }
-    .form__details {
-        margin-bottom: 30px;
+        font-size: 26px;
     }
     .form__button-wrapper {
-        margin-bottom: 40px;
+        margin-bottom: 15px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -111,8 +108,8 @@
                 justify-content: space-between;
     }
     .button-price {
-        height: 70px;
-        font-size: 24px;
+        height: 60px;
+        font-size: 22px;
         -webkit-transition-duration: 0.3s;
              -o-transition-duration: 0.3s;
                 transition-duration: 0.3s;
@@ -126,16 +123,7 @@
     }
 }
 @media (min-width: 1440px) {
-    .popup-form .popup-form__content-centered {
-        padding: 80px 40px;
-    }
-    .form__button-wrapper {
-        margin-bottom: 30px;
-    }
     .form, .form__details-input {
-        width: 430px;
-    }
-    .button-price {
-        width: 310px;
+        width: 410px;
     }
 }
