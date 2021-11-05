@@ -21,7 +21,7 @@
 }
 .delivery__wrapper {
     margin: 0 auto;
-    padding: 71px 13px 63px;
+    padding: 55px 13px 63px;
     width: 87.5%;
     text-align: center;
     background-color: #fff;
@@ -46,6 +46,9 @@
 .delivery-box__info {
     font-size: 15px;
     line-height: 19px;
+}
+.delivery-box__info .issue {
+    display: block;
 }
 .delivery-box__info + .delivery-box__info {
     padding-top: 10px;
@@ -123,12 +126,12 @@
         line-height: 34px;
     }
     .delivery-box__info {
-        width: 159px;
+        width: 171px;
         font-size: 18px;
         line-height: 23px;
     }
     .delivery-box__info + .delivery-box__info {
-        padding-top: 0;
+        padding-top: 15px;
     }
     .delivery-box-1 {
         padding-right: 60px;

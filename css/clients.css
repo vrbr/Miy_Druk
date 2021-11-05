@@ -58,7 +58,9 @@
     padding-top: 10px;
     width: 70px !important;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     white-space: nowrap;
 }
 .clients-pagination .swiper-pagination-bullet {

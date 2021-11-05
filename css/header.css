@@ -263,23 +263,35 @@
     height: 16px;
 }
 .dropdown-mob__icon:before {
-    transform: translate(5px, 0) rotate(-45deg);
+    -webkit-transform: translate(5px, 0) rotate(-45deg);
+        -ms-transform: translate(5px, 0) rotate(-45deg);
+            transform: translate(5px, 0) rotate(-45deg);
 }
 .dropdown-mob__icon:after {
-    transform: translate(-5px, 0) rotate(45deg);
+    -webkit-transform: translate(-5px, 0) rotate(45deg);
+        -ms-transform: translate(-5px, 0) rotate(45deg);
+            transform: translate(-5px, 0) rotate(45deg);
 }
 .dropdown-mob__input:checked ~ i::before {
-    transform: translate(5px, 0) rotate(45deg);
+    -webkit-transform: translate(5px, 0) rotate(45deg);
+        -ms-transform: translate(5px, 0) rotate(45deg);
+            transform: translate(5px, 0) rotate(45deg);
 }
 .dropdown-mob__input:checked ~ i::after {
-    transform: translate(-5px, 0) rotate(-45deg);
+    -webkit-transform: translate(-5px, 0) rotate(-45deg);
+        -ms-transform: translate(-5px, 0) rotate(-45deg);
+            transform: translate(-5px, 0) rotate(-45deg);
 }
 .dropdown-mob__input:checked ~ .dropdown-mob__content {
     margin-top: 0;
     max-height: 0;
     opacity: 0;
-    transform: translate(0 , -20%);
+    -webkit-transform: translate(0 , -20%);
+        -ms-transform: translate(0 , -20%);
+            transform: translate(0 , -20%);
     overflow: hidden;
+    -webkit-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
     transition: all 0.8s ease-out;
 }
 .dropdown-mob__content {
@@ -296,6 +308,7 @@
 .header-desk__nav-fixed .dropdown-desk__content {
     background-color: #252323;
     color: #fff;
+    background: -o-linear-gradient(180.23deg, rgba(72, 68, 68, 0.6) 0.04%, rgba(37, 35, 35, 0.6) 99.64%), #252323;
     background: linear-gradient(269.77deg, rgba(72, 68, 68, 0.6) 0.04%, rgba(37, 35, 35, 0.6) 99.64%), #252323;
 }
 .dropdown-mob__link-last {
@@ -305,7 +318,20 @@
     color: #FFF212;
 }
 .dropdown-desk__link-active {
-    transform: translateX(8px);
+    position: relative;
+    -webkit-transform: translateX(18px);
+        -ms-transform: translateX(18px);
+            transform: translateX(18px);
+}
+.dropdown-desk__link-active::before {
+    position: absolute;
+    content: "";
+    background: url("../img/mark.svg");
+    width: 16px;
+    height: 11px;
+    left: -18px;
+    bottom: 2px;
+    background-size: cover;
 }
 @-webkit-keyframes show_main {
     0% {
@@ -495,7 +521,10 @@
     .dropdown-desk__content {
         position: absolute;
         display: none;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         top: 37px;
         width: 231px;
         padding: 15px 20px;
@@ -504,8 +533,11 @@
         line-height: 14px;
         font-weight: 600;
         color: #252323;
-        box-shadow: 0px 6.24204px 12.4841px rgba(0, 0, 0, 0.77);
+        -webkit-box-shadow: 0px 6.24204px 12.4841px rgba(0, 0, 0, 0.77);
+                box-shadow: 0px 6.24204px 12.4841px rgba(0, 0, 0, 0.77);
         border-radius: 3px;
+        -webkit-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
         transition: all 0.25s ease-in-out;
         z-index: 10;
     }
@@ -513,12 +545,18 @@
         padding-top: 9px;
     }
     .dropdown-desk__link {
+        -webkit-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
         transition: all 0.25s ease-in-out;
     }
     .dropdown-desk__link:hover {
-        transform: translateX(8px);
+        -webkit-transform: translateX(8px);
+            -ms-transform: translateX(8px);
+                transform: translateX(8px);
     }
     .dropdown-desk:hover .dropdown-desk__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 }
@@ -567,6 +605,17 @@
         height: 50px;
         font-size: 18px;
         line-height: 22px;
+    }
+    .dropdown-desk__link-active {
+        -webkit-transform: translateX(21px);
+            -ms-transform: translateX(21px);
+                transform: translateX(21px);
+    }
+    .dropdown-desk__link-active::before {
+        width: 19px;
+        height: 13px;
+        left: -21px;
+        bottom: 3px;
     }
     .dropdown-desk__content {
         top: 50px;
