@@ -32,12 +32,18 @@
 }
 .swiper-buttons {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 40px;
     width: 160px;
     margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .works-button-next,
 .works-button-prev {
@@ -76,7 +82,9 @@
     padding-top: 10px;
     width: 70px !important;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     white-space: nowrap;
 }
 .works-pagination .swiper-pagination-bullet {

@@ -90,7 +90,7 @@
     height: 900px;
 }
 .separate-widescreen__button.button-1 {
-    padding-top: 23px;
+    padding-top: 19px;
 }
 .separate-widescreen__button .button-6 {
     width: 119px;
@@ -373,12 +373,21 @@
     .separate-souvenir__box {
         grid-template-columns: repeat(4, 1fr);
     }
+    .services__wrapper.separate-digital {
+        height: 728px;
+    }
     /*widescreen*/
     .services__wrapper.separate-widescreen {
         height: 754px;
     }
     .separate-widescreen__button.button-1 {
-        padding-top: 0px;
+        padding-top: 19px;
+    }
+    .separate-widescreen__button.button-3 {
+        padding-top: 0;
+    }
+    .separate-widescreen__button.button-4 {
+        padding-top: 23px;
     }
     /*souvenir*/
     .services__wrapper.separate-souvenir {
@@ -405,6 +414,12 @@
     }
     .separate-additional__descr {
         width: 69%;
+    }
+}
+
+@media (min-width: 1160px) {
+    .services__wrapper.separate-digital {
+        background-size: contain;
     }
 }
 
@@ -438,6 +453,7 @@
     .services__wrapper.separate-digital {
         padding-top: 45px;
         background-size: contain;
+        height: 760px;
     }
     .separate-digital__wrapper,
     .separate-widescreen__wrapper,
@@ -476,9 +492,11 @@
     .separate-souvenir__button-desc.button-3 {
         width: 180px;
     }
-    .separate-widescreen__button.button-1,
     .separate-widescreen__button.button-5 {
         padding-top: 23px;
+    }
+    .separate-widescreen__button.button-3 {
+        padding-top: 19px;
     }
     /*design*/
     .services__wrapper.separate-design {
