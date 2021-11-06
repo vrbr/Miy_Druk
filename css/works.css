@@ -29,6 +29,7 @@
 .works-slide img {
     display: block;
     margin: 0 auto;
+    border-radius: 10px;
 }
 .swiper-buttons {
     position: relative;

@@ -206,7 +206,7 @@
                 <p class="features__text-mob wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер<br>Материал<br>Тираж</p>
                 <p class="features__text-desk wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер. Материал. Тираж.</p>
                 <p class="features__button-text">Закажите печать прямо сейчас</p>
-                <a class="button features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
+                <a class="button js-open-modal features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
             </section>
 
             <section class="services-design">''
@@ -214,7 +214,7 @@
                     <div class="separate-design__wrapper">
                         <h3 class="separate-design__title">Дизайн</span></h3>
                         <div class="separate-design__box">
-                            <div class="separate-order separate-design__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-design__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-design__button-desc">Обработка<br>фото и<br>изображений</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/design/1.webp 1x">
@@ -222,7 +222,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-design__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-design__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-design__button-desc">Макет любой<br>печатной<br>продукции</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/design/2.webp 1x">
@@ -230,7 +230,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-design__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-design__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-design__button-desc"><br>Создание<br>логотипа</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/design/3.webp 1x">
@@ -238,7 +238,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-design__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-design__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-design__button-desc">Допечатная<br>подготовка<br>файлов</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/design/4.webp 1x">
@@ -246,7 +246,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-design__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-design__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-design__button-desc">Разработка<br>фирменного<br>стиля</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/design/4.webp 1x">
@@ -473,7 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="button order__button button-yellow button__popup-connection" data-modal="1" id="1">Оформить заказ</a>
+                <a class="button js-open-modal order__button button-yellow button__popup-connection" data-modal="1" id="1">Оформить заказ</a>
             </section>
             <section class="delivery">
                 <a id="anchor-delivery" class="anchor-delivery"></a>
@@ -826,6 +826,8 @@
             </div>
         </div>
     </div>
+
+    <div class="overlay js-overlay-modal"></div>
 
     <script>
         if (document.documentElement.clientWidth > 767) {

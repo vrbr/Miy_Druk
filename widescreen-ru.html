@@ -206,7 +206,7 @@
                 <p class="features__text-mob wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер<br>Материал<br>Тираж</p>
                 <p class="features__text-desk wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер. Материал. Тираж.</p>
                 <p class="features__button-text">Закажите печать прямо сейчас</p>
-                <a class="button features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
+                <a class="js-open-modal button features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
             </section>
 
             <section class="services-widescreen">
@@ -215,7 +215,7 @@
                         <h3 class="separate-widescreen__title">Широко-<br>форматная <span class="carry">печать</span></h3>
                         <h3 class="separate-widescreen__title-desk">Широкоформатная <span class="carry">печать</span></h3>
                         <div class="separate-widescreen__box">
-                            <div class="separate-order separate-widescreen__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-widescreen__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-widescreen__button-desc">Печать<br>на бумаге</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/widescreen/6.webp 1x">
@@ -223,7 +223,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-widescreen__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-widescreen__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-widescreen__button-desc">Печать<br>на холсте</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/widescreen/7.webp 1x">
@@ -231,7 +231,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-widescreen__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-widescreen__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-widescreen__button-desc">Печать<br>на баннере</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/widescreen/8.webp 1x">
@@ -239,7 +239,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-widescreen__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-widescreen__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-widescreen__button-desc"><br>Плакаты</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/widescreen/9.webp 1x">
@@ -247,7 +247,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-widescreen__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-widescreen__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-widescreen__button-desc">Печать<br>флага</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/widescreen/10.webp 1x">
@@ -255,7 +255,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-widescreen__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-widescreen__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-widescreen__button-desc">Печать<br>на пленке</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/widescreen/11.webp 1x">
@@ -482,7 +482,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="button order__button button-yellow button__popup-connection" data-modal="1" id="1">Оформить заказ</a>
+                <a class="js-open-modal button order__button button-yellow button__popup-connection" data-modal="1" id="1">Оформить заказ</a>
             </section>
             <section class="delivery">
                 <a id="anchor-delivery" class="anchor-delivery"></a>
@@ -835,6 +835,8 @@
             </div>
         </div>
     </div>
+
+    <div class="overlay js-overlay-modal"></div>
 
     <script>
         if (document.documentElement.clientWidth > 767) {

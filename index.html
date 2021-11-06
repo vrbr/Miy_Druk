@@ -206,7 +206,7 @@
                 <p class="features__text-mob wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер<br>Материал<br>Тираж</p>
                 <p class="features__text-desk wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер. Материал. Тираж.</p>
                 <p class="features__button-text">Закажите печать прямо сейчас</p>
-                <a class="button features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
+                <a class="js-open-modal button features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
             </section>
             <section class="services">
                 <div class="services__wrapper">
@@ -291,7 +291,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="works">
                 <a id="anchor-works" class="anchor-works"></a>
                 <div class="works__wrapper">
@@ -437,7 +436,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="clients">
                 <div class="clients__wrapper">
                     <h2 class="clients__title wow animate__animated animate__fadeInDown" data-wow-offset="200">Наши клиенты</h2>
@@ -483,7 +481,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="order">
                 <h2 class="order__title wow animate__animated animate__fadeInRight" data-wow-offset="200">Как сделать <span class="carry">заказ</span></h2>
                 <div class="order__wrapper">
@@ -506,7 +503,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="button order__button button-yellow button__popup-connection" data-modal="1" id="1">Оформить заказ</a>
+                <a class="js-open-modal button order__button button-yellow button__popup-connection" data-modal="1" id="1">Оформить заказ</a>
             </section>
             <section class="delivery">
                 <a id="anchor-delivery" class="anchor-delivery"></a>
@@ -820,6 +817,8 @@
             </div>
         </div>
     </div>
+
+    <div class="overlay js-overlay-modal"></div>
 
     <script>
         if (document.documentElement.clientWidth > 767) {

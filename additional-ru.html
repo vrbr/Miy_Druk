@@ -206,7 +206,7 @@
                 <p class="features__text-mob wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер<br>Материал<br>Тираж</p>
                 <p class="features__text-desk wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер. Материал. Тираж.</p>
                 <p class="features__button-text">Закажите печать прямо сейчас</p>
-                <a class="button features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
+                <a class="button js-open-modal features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
             </section>
 
             <section class="services-additional">
@@ -216,7 +216,7 @@
                             <h3 class="separate-additional__title additional__title">Дополни-<br>тельные  услуги</h3>
                             <h3 class="separate-additional__title-desk additional__title">Дополнительные<br>услуги</h3>
                             <p class="separate-additional__descr">Ламинирование любых форматов, плоттерная порезка, переплёт документов (твёрдый, мягкий, на скобу, пружину), биговка, лакировка, фольгирование, конгрев, тиснение, высечка и др.</p>
-                            <a class="button separate-additional__button services__button button-yellow button__popup-calculate" data-modal="2" id="2">Заказать</a>
+                            <a class="button js-open-modal separate-additional__button services__button button-yellow button__popup-calculate" data-modal="2" id="2">Заказать</a>
                         </div>
                     </div>
                     <a class="back-additional" href="index.html">Вернуться на главную</a>
@@ -436,7 +436,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="button order__button button-yellow button__popup-connection" data-modal="1" id="1">Оформить заказ</a>
+                <a class="button js-open-modal order__button button-yellow button__popup-connection" data-modal="1" id="1">Оформить заказ</a>
             </section>
             <section class="delivery">
                 <a id="anchor-delivery" class="anchor-delivery"></a>
@@ -789,6 +789,8 @@
             </div>
         </div>
     </div>
+
+    <div class="overlay js-overlay-modal"></div>
 
     <script>
         if (document.documentElement.clientWidth > 767) {

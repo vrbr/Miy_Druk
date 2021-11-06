@@ -206,7 +206,7 @@
                 <p class="features__text-mob wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер<br>Материал<br>Тираж</p>
                 <p class="features__text-desk wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">Любой размер. Материал. Тираж.</p>
                 <p class="features__button-text">Закажите печать прямо сейчас</p>
-                <a class="button features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
+                <a class="js-open-modal button features__button button-yellow button__popup-connection" data-modal="1" id="1">Заказать</a>
             </section>
 
             <section class="services-digital">
@@ -214,7 +214,7 @@
                     <div class="separate-digital__wrapper">
                         <h3 class="separate-digital__title">Цифровая <span class="carry">печать</span></h3>
                         <div class="separate-digital__box">
-                            <div class="separate-order separate-digital__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-digital__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-digital__button-desc">Визитки</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/digital/12.webp 1x">
@@ -222,7 +222,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-digital__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-digital__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-digital__button-desc">Каталоги</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/digital/13.webp 1x">
@@ -230,7 +230,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-digital__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-digital__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-digital__button-desc">Постеры</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/digital/14.webp 1x">
@@ -238,7 +238,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-digital__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-digital__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-digital__button-desc">Журналы</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/digital/15.webp 1x">
@@ -246,7 +246,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-digital__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-digital__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-digital__button-desc">Стикеры</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/digital/16.webp 1x">
@@ -254,7 +254,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-digital__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-digital__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-digital__button-desc">Буклеты</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/digital/17.webp 1x">
@@ -262,7 +262,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-digital__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-digital__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-digital__button-desc">Листовки</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/digital/18.webp 1x">
@@ -270,7 +270,7 @@
                                 </picture>
                                 <p class="separate-order__button">Заказать</p>
                             </div>
-                            <div class="separate-order separate-digital__button button__popup-calculate" data-modal="2" id="2">
+                            <div class="separate-order separate-digital__button js-open-modal button__popup-calculate" data-modal="2" id="2">
                                 <p class="separate-digital__button-desc">Брошюры</p>
                                 <picture>
                                     <source type="image/webp" srcset="img/services/digital/19.webp 1x">
@@ -497,7 +497,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="button order__button button-yellow button__popup-connection" data-modal="1" id="1">Оформить заказ</a>
+                <a class="js-open-modal button order__button button-yellow button__popup-connection" data-modal="1" id="1">Оформить заказ</a>
             </section>
             <section class="delivery">
                 <a id="anchor-delivery" class="anchor-delivery"></a>
@@ -851,6 +851,8 @@
             </div>
         </div>
     </div>
+
+    <div class="overlay js-overlay-modal"></div>
 
     <script>
         if (document.documentElement.clientWidth > 767) {
