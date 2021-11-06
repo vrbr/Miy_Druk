@@ -319,6 +319,7 @@
 }
 .dropdown-desk__link-active {
     position: relative;
+    cursor:auto;
     -webkit-transform: translateX(18px);
         -ms-transform: translateX(18px);
             transform: translateX(18px);
@@ -549,7 +550,7 @@
         -o-transition: all 0.25s ease-in-out;
         transition: all 0.25s ease-in-out;
     }
-    .dropdown-desk__link:hover {
+    .dropdown-desk__link:not(.dropdown-desk__link-active):hover {
         -webkit-transform: translateX(8px);
             -ms-transform: translateX(8px);
                 transform: translateX(8px);
