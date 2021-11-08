@@ -60,12 +60,11 @@
     .delivery::after {
         position: absolute;
         content: "";
-        background: url("../img/delivery.svg");
+        background: url("../img/delivery.svg") no-repeat;
         width: 132px;
         height: 391px;
         top: 112px;
         right: 58px;
-        background-size: cover;
     }
     .anchor-delivery {
         top: -100px;
@@ -81,7 +80,7 @@
     }
     .delivery__wrapper {
         margin-left: 0;
-        padding: 45px 13px 45px 60px;
+        padding: 35px 13px 35px 60px;
         width: 58%;
         text-align: left;
         border: 3px solid #000000;
@@ -99,11 +98,11 @@
 }
 @media (min-width: 1200px) {
     .delivery {
-        height: 800px;
+        height: 670px;
     }
     .delivery::after {
-        width: 212px;
-        height: 632px;
+        width: 182px;
+        height: 552px;
         top: 74px;
         right: 92px;
     }
@@ -119,7 +118,7 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        padding: 97px 100px 93px 160px;
+        padding: 97px 100px 72px 160px;
     }
     .delivery-box__title {
         font-size: 28px;
@@ -142,11 +141,13 @@
 }
 @media (min-width: 1440px) {
     .delivery {
-        height: 900px;
+        height: 760px;
     }
     .delivery::after {
-        top: 140px;
+        top: 93px;
         right: 159px;
+        width: 197px;
+        height: 585px;
     }
     .delivery__wrapper {
         width: 55%;
