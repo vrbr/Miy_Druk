@@ -6,8 +6,7 @@
     top: -75px;
 }
 .works__wrapper {
-    margin-bottom: 60px;
-    padding-top: 27px;
+    margin-bottom: 40px;
 }
 .works-wrapper {
     height: 200px;
@@ -149,6 +148,7 @@
         max-width: 1230px;
     }
     .works__wrapper {
+        margin-bottom: 0;
         padding-left: 160px;
     }
     .works-wrapper {

@@ -131,14 +131,11 @@
 }
 @media (min-width: 1200px) {
     .order {
-        padding-bottom: 300px;
+        padding-bottom: 150px;
         padding-top: 50px;
     }
     .order::after {
-        width: 320px;
-        height: 426px;
-        right: 40px;
-        bottom: 27px;
+        bottom: 33px;
     }
     .anchor-order {
         top: -130px;
@@ -183,10 +180,13 @@
 }
 @media (min-width: 1440px) {
     .order {
-        padding-top: 50px;
+        padding-bottom: 90px;
     }
     .order::after {
         right: 94px;
+        width: 279px;
+        height: 376px;
+        bottom: 19px;
     }
     .order__title {
         padding-left: 215px;

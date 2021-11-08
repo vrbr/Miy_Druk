@@ -156,12 +156,11 @@
     .requirements::after {
         position: absolute;
         content: "";
-        background: url("../img/req.svg");
+        background: url("../img/req.svg") no-repeat;
         width: 300px;
         height: 194px;
         bottom: 0;
         right: 39px;
-        background-size: cover;
     }
     .requirements__wrapper {
         display: -webkit-box;
@@ -213,13 +212,13 @@
         top: -120px;
     }
     .requirements::after {
-        width: 610px;
-        height: 395px;
-        bottom: 16px;
-        right: 38px;
+        width: 510px;
+        height: 348px;
+        bottom: -8px;
+        right: 54px;
     }
     .requirements__wrapper {
-        padding-bottom: 200px;
+        padding-bottom: 140px;
     }
     .requirements__title {
         padding-left: 160px;
@@ -250,6 +249,7 @@
         width: 496px;
     }
     .requirements::after {
-        bottom: 0;
+        bottom: -25px;
+        right: 97px;
     }
 }

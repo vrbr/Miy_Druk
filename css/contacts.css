@@ -31,7 +31,7 @@
 .contacts-block {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 99px 14px 1fr;
+    -ms-grid-columns: 99px 1fr;
     grid-template-columns: 99px 1fr;
     grid-gap: 14px;
 }
@@ -208,7 +208,7 @@
 }
 @media (min-width: 1200px) {
     .contacts {
-        height: 816px;
+        height: 750px;
     }
     .anchor-contacts {
         top: -120px;
@@ -261,7 +261,7 @@
     .contacts {
         margin-bottom: 66px;
         padding-top: 65px;
-        height: 850px;
+        height: 782px;
     }
     .contacts__title {
         font-size: 72px;
